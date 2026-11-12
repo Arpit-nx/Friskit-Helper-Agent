@@ -159,3 +159,18 @@
 2026-11-12 11:23:02,603 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
 2026-11-12 11:23:03,559 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-6ee8a59b-e12a-4e01-a168-cc77d7b4e420 model=openai/gpt-oss-120b prompt_tokens=1222 completion_tokens=142 total_tokens=1364
 2026-11-12 11:23:03,559 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 16:04:42,762 INFO rag.generation GROQ_CLIENT_INITIALIZED max_concurrency=10
+2026-11-12 16:04:42,767 INFO rag.pipeline INGESTION_STARTED
+2026-11-12 16:04:42,779 INFO rag.ingestion INGEST_JSON_OK path=C:\Users\ARPIT\Downloads\Repo_Fris_helper\Friskit-Helper-Agent\data\help-catalog.json topics=67
+2026-11-12 16:04:42,807 INFO rag.ingestion INGEST_COMPLETE documents=70
+2026-11-12 16:04:42,808 INFO rag.ingestion CHUNKING_COMPLETE documents=70 chunks=79
+2026-11-12 16:04:42,812 ERROR rag.retrieval EMBEDDING_INIT_FAILED falling_back_to_bm25 error=ModuleNotFoundError
+Traceback (most recent call last):
+  File "C:\Users\ARPIT\Downloads\Repo_Fris_helper\Friskit-Helper-Agent\app\retriever.py", line 132, in __init__
+    from sentence_transformers import SentenceTransformer
+ModuleNotFoundError: No module named 'sentence_transformers'
+2026-11-12 16:04:42,813 INFO rag.pipeline PIPELINE_READY documents=70 chunks=79 mode=bm25
+2026-11-12 16:08:16,535 WARNING rag.api HTTP_REQUEST_COMPLETE request_id=7c8b9b74505044ce97c82afca3502e22 method=GET path=/ status=401 duration_ms=1.46
+2026-11-12 16:08:20,786 INFO rag.api HTTP_REQUEST_COMPLETE request_id=d3005c23832141c1a7505461bcb809cf method=GET path=/docs status=200 duration_ms=0.72
+2026-11-12 16:08:21,338 INFO rag.api HTTP_REQUEST_COMPLETE request_id=a62b9332b56c46b9a1a7be24505e1aff method=GET path=/openapi.json status=200 duration_ms=6.11
+2026-11-12 16:08:52,263 WARNING rag.api HTTP_REQUEST_COMPLETE request_id=d70a43108b2248d5a089c19da1b16d1a method=POST path=/chat status=401 duration_ms=0.32
