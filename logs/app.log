@@ -174,3 +174,86 @@ ModuleNotFoundError: No module named 'sentence_transformers'
 2026-11-12 16:08:20,786 INFO rag.api HTTP_REQUEST_COMPLETE request_id=d3005c23832141c1a7505461bcb809cf method=GET path=/docs status=200 duration_ms=0.72
 2026-11-12 16:08:21,338 INFO rag.api HTTP_REQUEST_COMPLETE request_id=a62b9332b56c46b9a1a7be24505e1aff method=GET path=/openapi.json status=200 duration_ms=6.11
 2026-11-12 16:08:52,263 WARNING rag.api HTTP_REQUEST_COMPLETE request_id=d70a43108b2248d5a089c19da1b16d1a method=POST path=/chat status=401 duration_ms=0.32
+2026-11-12 16:11:13,610 WARNING rag.api HTTP_REQUEST_COMPLETE request_id=c1436a48f1fc4ae1ac45ca2ebea4866a method=GET path=/ status=401 duration_ms=0.72
+2026-11-12 16:11:20,598 INFO rag.api HTTP_REQUEST_COMPLETE request_id=51070023f9e54adf844dc4096fff69c4 method=GET path=/docs status=200 duration_ms=0.66
+2026-11-12 16:11:21,007 INFO rag.api HTTP_REQUEST_COMPLETE request_id=11dfb64f72cd46fdb1c7f94abc3f94aa method=GET path=/openapi.json status=200 duration_ms=0.72
+2026-11-12 16:11:41,476 INFO rag.api CHAT_REQUEST request_id=3556c9684fa847c1b0000705983ad232 role=ADMIN current_page=Dashboard
+2026-11-12 16:11:41,476 INFO rag.api CHAT_ROUTE request_id=3556c9684fa847c1b0000705983ad232 route=rag
+2026-11-12 16:11:41,493 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=24 candidates=79 returned=5 mode=bm25
+2026-11-12 16:11:41,493 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.7325 relevant=True
+2026-11-12 16:11:41,494 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 16:11:42,589 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-56df88f5-9fcd-4cec-abff-2ba639a89cfd model=openai/gpt-oss-120b prompt_tokens=1396 completion_tokens=128 total_tokens=1524
+2026-11-12 16:11:42,589 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 16:11:42,590 INFO rag.api HTTP_REQUEST_COMPLETE request_id=3556c9684fa847c1b0000705983ad232 method=POST path=/chat status=200 duration_ms=1118.89
+2026-11-12 16:12:08,088 INFO rag.api CHAT_REQUEST request_id=fb00c74bed824587a368cf4c6fea4671 role=ADMIN current_page=Dashboard
+2026-11-12 16:12:08,088 INFO rag.api CHAT_ROUTE request_id=fb00c74bed824587a368cf4c6fea4671 route=rag
+2026-11-12 16:12:08,089 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=36 candidates=79 returned=5 mode=bm25
+2026-11-12 16:12:08,089 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.6705 relevant=True
+2026-11-12 16:12:08,090 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 16:12:09,158 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-72878989-e7af-42ad-9397-af90a6c27fbe model=openai/gpt-oss-120b prompt_tokens=1386 completion_tokens=213 total_tokens=1599
+2026-11-12 16:12:09,158 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 16:12:09,158 INFO rag.api HTTP_REQUEST_COMPLETE request_id=fb00c74bed824587a368cf4c6fea4671 method=POST path=/chat status=200 duration_ms=1071.13
+2026-11-12 16:13:11,960 INFO rag.api CHAT_REQUEST request_id=9e9c857e8b5a462f98b6c785c9dd7962 role=ADMIN current_page=Dashboard
+2026-11-12 16:13:11,960 INFO rag.api CHAT_ROUTE request_id=9e9c857e8b5a462f98b6c785c9dd7962 route=rag
+2026-11-12 16:13:11,961 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=75 candidates=79 returned=5 mode=bm25
+2026-11-12 16:13:11,961 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.7164 relevant=True
+2026-11-12 16:13:11,961 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 16:13:12,914 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-3fb461e3-9fd6-4484-aae3-4424639ddbe3 model=openai/gpt-oss-120b prompt_tokens=1583 completion_tokens=207 total_tokens=1790
+2026-11-12 16:13:12,914 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 16:13:12,915 INFO rag.api HTTP_REQUEST_COMPLETE request_id=9e9c857e8b5a462f98b6c785c9dd7962 method=POST path=/chat status=200 duration_ms=956.11
+2026-11-12 16:13:22,106 INFO rag.api CHAT_REQUEST request_id=435c96d56d584a41ae2b82ea1c4c8991 role=ADMIN current_page=Dashboard
+2026-11-12 16:13:22,106 INFO rag.api CHAT_ROUTE request_id=435c96d56d584a41ae2b82ea1c4c8991 route=rag
+2026-11-12 16:13:22,108 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=75 candidates=79 returned=5 mode=bm25
+2026-11-12 16:13:22,108 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.7164 relevant=True
+2026-11-12 16:13:22,108 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 16:13:23,142 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-1c9eb10a-e65b-4678-a26a-9e821f295a9c model=openai/gpt-oss-120b prompt_tokens=1583 completion_tokens=226 total_tokens=1809
+2026-11-12 16:13:23,142 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 16:13:23,143 INFO rag.api HTTP_REQUEST_COMPLETE request_id=435c96d56d584a41ae2b82ea1c4c8991 method=POST path=/chat status=200 duration_ms=1037.71
+2026-11-12 16:13:41,182 INFO rag.api CHAT_REQUEST request_id=aae29493a42d4aec83253594a0dd0c78 role=ADMIN current_page=Dashboard
+2026-11-12 16:13:41,182 INFO rag.api CHAT_ROUTE request_id=aae29493a42d4aec83253594a0dd0c78 route=rag
+2026-11-12 16:13:41,183 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=35 candidates=79 returned=5 mode=bm25
+2026-11-12 16:13:41,183 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.6316 relevant=True
+2026-11-12 16:13:41,183 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 16:13:42,194 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-9172b0df-c3ed-4cf8-a6df-e04cfef8667d model=openai/gpt-oss-120b prompt_tokens=1276 completion_tokens=263 total_tokens=1539
+2026-11-12 16:13:42,195 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 16:13:42,195 INFO rag.api HTTP_REQUEST_COMPLETE request_id=aae29493a42d4aec83253594a0dd0c78 method=POST path=/chat status=200 duration_ms=1014.20
+2026-11-12 16:13:59,811 INFO rag.api CHAT_REQUEST request_id=1c4fda22f92442de9de204f2c659b521 role=ADMIN current_page=Dashboard
+2026-11-12 16:13:59,812 INFO rag.api CHAT_ROUTE request_id=1c4fda22f92442de9de204f2c659b521 route=rag
+2026-11-12 16:13:59,813 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=24 candidates=79 returned=5 mode=bm25
+2026-11-12 16:13:59,813 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.7325 relevant=True
+2026-11-12 16:13:59,813 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 16:14:00,657 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-53cc1f3b-39b5-41b0-8ad8-5bcb603eceec model=openai/gpt-oss-120b prompt_tokens=1396 completion_tokens=128 total_tokens=1524
+2026-11-12 16:14:00,657 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 16:14:00,657 INFO rag.api HTTP_REQUEST_COMPLETE request_id=1c4fda22f92442de9de204f2c659b521 method=POST path=/chat status=200 duration_ms=846.48
+2026-11-12 16:14:10,443 INFO rag.api CHAT_REQUEST request_id=a893a2c111674677b492916be1170b1b role=ADMIN current_page=Dashboard
+2026-11-12 16:14:10,443 INFO rag.api CHAT_ROUTE request_id=a893a2c111674677b492916be1170b1b route=rag
+2026-11-12 16:14:10,443 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=24 candidates=79 returned=5 mode=bm25
+2026-11-12 16:14:10,443 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.7325 relevant=True
+2026-11-12 16:14:10,444 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 16:14:11,269 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-a0093014-3093-4b7b-bc1f-39cc00df5530 model=openai/gpt-oss-120b prompt_tokens=1396 completion_tokens=164 total_tokens=1560
+2026-11-12 16:14:11,270 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 16:14:11,270 INFO rag.api HTTP_REQUEST_COMPLETE request_id=a893a2c111674677b492916be1170b1b method=POST path=/chat status=200 duration_ms=828.48
+2026-11-12 16:14:39,952 INFO rag.api CHAT_REQUEST request_id=bd1bb12be8764331bfa600fed13b72b1 role=ADMIN current_page=Dashboard
+2026-11-12 16:14:39,953 INFO rag.api CHAT_ROUTE request_id=bd1bb12be8764331bfa600fed13b72b1 route=rag
+2026-11-12 16:14:39,954 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=35 candidates=79 returned=5 mode=bm25
+2026-11-12 16:14:39,954 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.6316 relevant=True
+2026-11-12 16:14:39,955 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 16:14:41,025 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-70db8585-e2a9-4a45-839e-f71ca33255c3 model=openai/gpt-oss-120b prompt_tokens=1276 completion_tokens=252 total_tokens=1528
+2026-11-12 16:14:41,025 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 16:14:41,025 INFO rag.api HTTP_REQUEST_COMPLETE request_id=bd1bb12be8764331bfa600fed13b72b1 method=POST path=/chat status=200 duration_ms=1074.17
+2026-11-12 16:15:26,548 INFO rag.api CHAT_REQUEST request_id=7e27a0cd1a5b4152be98205f294c2344 role=ADMIN current_page=Dashboard
+2026-11-12 16:15:26,548 INFO rag.api CHAT_ROUTE request_id=7e27a0cd1a5b4152be98205f294c2344 route=rag
+2026-11-12 16:15:26,549 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=75 candidates=79 returned=5 mode=bm25
+2026-11-12 16:15:26,549 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.7164 relevant=True
+2026-11-12 16:15:26,549 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 16:15:27,885 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-3d278ca1-4d44-4aab-96b8-1d7679ef6128 model=openai/gpt-oss-120b prompt_tokens=1583 completion_tokens=125 total_tokens=1708
+2026-11-12 16:15:27,885 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 16:15:27,886 INFO rag.api HTTP_REQUEST_COMPLETE request_id=7e27a0cd1a5b4152be98205f294c2344 method=POST path=/chat status=200 duration_ms=1338.60
+2026-11-12 16:20:04,189 INFO rag.api CHAT_REQUEST request_id=da5d59b989d0480187b6bede91a0e96d role=ADMIN current_page=Dashboard
+2026-11-12 16:20:04,189 INFO rag.api CHAT_ROUTE request_id=da5d59b989d0480187b6bede91a0e96d route=rag
+2026-11-12 16:20:04,190 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=35 candidates=79 returned=5 mode=bm25
+2026-11-12 16:20:04,190 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.6316 relevant=True
+2026-11-12 16:20:04,191 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 16:20:05,385 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-19f92110-37e7-47fd-9923-35f4774c5d10 model=openai/gpt-oss-120b prompt_tokens=1276 completion_tokens=173 total_tokens=1449
+2026-11-12 16:20:05,385 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 16:20:05,386 INFO rag.api HTTP_REQUEST_COMPLETE request_id=da5d59b989d0480187b6bede91a0e96d method=POST path=/chat status=200 duration_ms=1197.43
