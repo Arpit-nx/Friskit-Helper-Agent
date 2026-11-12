@@ -1,0 +1,161 @@
+2026-11-11 15:44:03,086 INFO rag.generation GROQ_CLIENT_INITIALIZED max_concurrency=10
+2026-11-11 15:44:03,087 INFO rag.pipeline INGESTION_STARTED
+2026-11-11 15:44:03,090 INFO rag.ingestion INGEST_JSON_OK path=C:\Users\Sourav Mishra\Downloads\friskit_help_assistant\friskit_help_assistant\data\help-catalog.json topics=8
+2026-11-11 15:44:03,096 INFO rag.ingestion INGEST_COMPLETE documents=11
+2026-11-11 15:44:03,098 INFO rag.ingestion CHUNKING_COMPLETE documents=11 chunks=13
+2026-11-11 15:44:31,743 INFO rag.retrieval EMBEDDING_INDEX_READY model=sentence-transformers/all-MiniLM-L6-v2 chunks=13
+2026-11-11 15:44:31,743 INFO rag.pipeline PIPELINE_READY documents=11 chunks=13 mode=hybrid
+2026-11-11 15:51:37,293 INFO rag.api CHAT_REQUEST user_id=SONU role=ADMIN current_page=None
+2026-11-11 15:51:37,350 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=23 candidates=13 returned=5 mode=hybrid
+2026-11-11 15:51:37,351 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.6089 relevant=True
+2026-11-11 15:51:37,353 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-11 15:51:38,640 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-ca0dcfd8-fa69-4bb1-a05d-69485e2dadce model=openai/gpt-oss-120b prompt_tokens=1343 completion_tokens=99 total_tokens=1442
+2026-11-11 15:51:38,643 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-11 15:51:51,125 INFO rag.api CHAT_REQUEST user_id=SONU role=ADMIN current_page=None
+2026-11-11 15:51:51,156 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=22 candidates=13 returned=5 mode=hybrid
+2026-11-11 15:51:51,159 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.3858 relevant=True
+2026-11-11 15:51:51,159 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-11 15:51:52,221 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-a3682435-ef7b-48bd-a144-5e659dd1698f model=openai/gpt-oss-120b prompt_tokens=1425 completion_tokens=214 total_tokens=1639
+2026-11-11 15:51:52,221 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-11 15:52:08,425 INFO rag.api CHAT_REQUEST user_id=SONU role=ADMIN current_page=None
+2026-11-11 15:52:08,464 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=47 candidates=13 returned=5 mode=hybrid
+2026-11-11 15:52:08,466 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.6444 relevant=True
+2026-11-11 15:52:08,466 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-11 15:52:09,419 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-aff9b30a-c7a2-4bd7-af73-e9f0d90f4cad model=openai/gpt-oss-120b prompt_tokens=1434 completion_tokens=114 total_tokens=1548
+2026-11-11 15:52:09,419 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-11 15:52:42,012 INFO rag.api CHAT_REQUEST user_id=SONU role=ADMIN current_page=None
+2026-11-11 15:52:42,043 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=32 candidates=13 returned=5 mode=hybrid
+2026-11-11 15:52:42,043 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.3934 relevant=True
+2026-11-11 15:52:42,045 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-11 15:52:43,244 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-42d5164f-463f-4d57-a5b5-470a6737b616 model=openai/gpt-oss-120b prompt_tokens=1438 completion_tokens=126 total_tokens=1564
+2026-11-11 15:52:43,244 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-11 15:56:11,361 INFO rag.api CHAT_REQUEST user_id=SONU role=ADMIN current_page=None
+2026-11-11 15:56:11,401 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=59 candidates=13 returned=5 mode=hybrid
+2026-11-11 15:56:11,401 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.5999 relevant=True
+2026-11-11 15:56:11,401 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-11 15:56:12,228 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-45386052-44fe-4a21-9e1b-7379327c322f model=openai/gpt-oss-120b prompt_tokens=1352 completion_tokens=176 total_tokens=1528
+2026-11-11 15:56:12,228 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-11 16:06:42,486 INFO rag.generation GROQ_CLIENT_INITIALIZED max_concurrency=10
+2026-11-11 16:06:42,488 INFO rag.pipeline INGESTION_STARTED
+2026-11-11 16:06:42,554 INFO rag.ingestion INGEST_JSON_OK path=C:\Users\Sourav Mishra\Downloads\friskit_help_assistant\friskit_help_assistant\data\help-catalog.json topics=8
+2026-11-11 16:06:42,560 INFO rag.ingestion INGEST_COMPLETE documents=11
+2026-11-11 16:06:42,566 INFO rag.ingestion CHUNKING_COMPLETE documents=11 chunks=13
+2026-11-11 16:07:17,482 INFO rag.retrieval EMBEDDING_INDEX_READY model=sentence-transformers/all-MiniLM-L6-v2 chunks=13
+2026-11-11 16:07:17,482 INFO rag.pipeline PIPELINE_READY documents=11 chunks=13 mode=hybrid
+2026-11-11 17:27:34,890 INFO rag.api CHAT_REQUEST user_id=SONU role=ADMIN current_page=admin.dealer-mapping
+2026-11-11 17:27:34,896 INFO rag.api CHAT_ROUTE route=rag user_id=SONU
+2026-11-11 17:27:35,872 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=14 candidates=12 returned=5 mode=hybrid
+2026-11-11 17:27:35,872 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.3380 relevant=True
+2026-11-11 17:27:35,881 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-11 17:27:37,513 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-f29d4bfe-5a5c-424e-81ee-3ffdbe4479c4 model=openai/gpt-oss-120b prompt_tokens=1263 completion_tokens=195 total_tokens=1458
+2026-11-11 17:27:37,513 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-11 17:47:20,225 INFO rag.generation GROQ_CLIENT_INITIALIZED max_concurrency=10
+2026-11-11 17:47:20,225 INFO rag.pipeline INGESTION_STARTED
+2026-11-11 17:47:20,230 INFO rag.ingestion INGEST_JSON_OK path=C:\Users\Sourav Mishra\Downloads\friskit_help_assistant\friskit_help_assistant\data\help-catalog.json topics=0
+2026-11-11 17:47:20,269 INFO rag.ingestion INGEST_COMPLETE documents=3
+2026-11-11 17:47:20,272 INFO rag.ingestion CHUNKING_COMPLETE documents=3 chunks=5
+2026-11-11 17:48:40,980 INFO rag.retrieval EMBEDDING_INDEX_READY model=sentence-transformers/all-MiniLM-L6-v2 chunks=5
+2026-11-11 17:48:40,980 INFO rag.pipeline PIPELINE_READY documents=3 chunks=5 mode=hybrid
+2026-11-11 17:49:23,424 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-11 17:49:23,425 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-11 17:49:23,458 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=24 candidates=4 returned=4 mode=hybrid
+2026-11-11 17:49:23,461 INFO rag.pipeline RETRIEVAL_COMPLETE hits=4 score=0.1063 relevant=False
+2026-11-11 17:49:42,768 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-11 17:49:42,768 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-11 17:49:42,789 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=19 candidates=5 returned=5 mode=hybrid
+2026-11-11 17:49:42,791 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.0896 relevant=False
+2026-11-11 17:51:00,344 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-11 17:51:00,344 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-11 17:51:00,449 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=19 candidates=5 returned=5 mode=hybrid
+2026-11-11 17:51:00,451 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.0896 relevant=False
+2026-11-11 17:56:33,944 INFO rag.generation GROQ_CLIENT_INITIALIZED max_concurrency=10
+2026-11-11 17:56:33,944 INFO rag.pipeline INGESTION_STARTED
+2026-11-11 17:56:33,948 INFO rag.ingestion INGEST_JSON_OK path=C:\Users\Sourav Mishra\Downloads\friskit_help_assistant\friskit_help_assistant\data\help-catalog.json topics=0
+2026-11-11 17:56:33,955 INFO rag.ingestion INGEST_COMPLETE documents=3
+2026-11-11 17:56:33,957 INFO rag.ingestion CHUNKING_COMPLETE documents=3 chunks=5
+2026-11-11 17:56:58,934 INFO rag.retrieval EMBEDDING_INDEX_READY model=sentence-transformers/all-MiniLM-L6-v2 chunks=5
+2026-11-11 17:56:58,934 INFO rag.pipeline PIPELINE_READY documents=3 chunks=5 mode=hybrid
+2026-11-11 17:57:08,242 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-11 17:57:08,242 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-11 17:57:08,269 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=19 candidates=5 returned=5 mode=hybrid
+2026-11-11 17:57:08,271 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.0896 relevant=False
+2026-11-11 17:57:08,271 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-11 17:57:09,561 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-fbc49466-e472-4389-9cb3-bbc351529eec model=openai/gpt-oss-120b prompt_tokens=1357 completion_tokens=146 total_tokens=1503
+2026-11-11 17:57:09,561 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-11 17:57:35,843 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-11 17:57:35,843 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-11 17:57:35,870 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=25 candidates=4 returned=4 mode=hybrid
+2026-11-11 17:57:35,870 INFO rag.pipeline RETRIEVAL_COMPLETE hits=4 score=0.1067 relevant=False
+2026-11-11 17:57:35,870 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=4
+2026-11-11 17:57:36,922 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-892e5fad-a2a9-4693-a699-90f8182444fb model=openai/gpt-oss-120b prompt_tokens=1261 completion_tokens=143 total_tokens=1404
+2026-11-11 17:57:36,922 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-11 17:58:47,280 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-11 17:58:47,282 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-11 17:58:47,307 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=25 candidates=4 returned=4 mode=hybrid
+2026-11-11 17:58:47,309 INFO rag.pipeline RETRIEVAL_COMPLETE hits=4 score=0.2037 relevant=True
+2026-11-11 17:58:47,309 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=4
+2026-11-11 17:58:48,351 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-3c57bbbb-278f-4514-b1e3-2f29b84b4fa3 model=openai/gpt-oss-120b prompt_tokens=1261 completion_tokens=239 total_tokens=1500
+2026-11-11 17:58:48,351 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-11 17:59:04,958 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-11 17:59:04,958 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-11 17:59:04,986 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=31 candidates=4 returned=4 mode=hybrid
+2026-11-11 17:59:04,986 INFO rag.pipeline RETRIEVAL_COMPLETE hits=4 score=0.2490 relevant=True
+2026-11-11 17:59:04,989 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=4
+2026-11-11 17:59:06,032 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-13d67db0-6bba-451d-833d-823e9f6279c6 model=openai/gpt-oss-120b prompt_tokens=1273 completion_tokens=177 total_tokens=1450
+2026-11-11 17:59:06,033 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-11 18:06:49,135 INFO rag.generation GROQ_CLIENT_INITIALIZED max_concurrency=10
+2026-11-11 18:06:49,137 INFO rag.pipeline INGESTION_STARTED
+2026-11-11 18:06:49,139 INFO rag.ingestion INGEST_JSON_OK path=C:\Users\Sourav Mishra\Downloads\friskit_help_assistant\friskit_help_assistant\data\help-catalog.json topics=67
+2026-11-11 18:06:49,143 INFO rag.ingestion INGEST_COMPLETE documents=70
+2026-11-11 18:06:49,143 INFO rag.ingestion CHUNKING_COMPLETE documents=70 chunks=79
+2026-11-11 18:07:13,203 INFO rag.retrieval EMBEDDING_INDEX_READY model=sentence-transformers/all-MiniLM-L6-v2 chunks=79
+2026-11-11 18:07:13,203 INFO rag.pipeline PIPELINE_READY documents=70 chunks=79 mode=hybrid
+2026-11-11 18:08:16,231 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-11 18:08:16,231 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-11 18:08:16,268 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=31 candidates=4 returned=4 mode=hybrid
+2026-11-11 18:08:16,268 INFO rag.pipeline RETRIEVAL_COMPLETE hits=4 score=0.3593 relevant=True
+2026-11-11 18:08:16,268 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=4
+2026-11-11 18:08:17,768 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-6a3f6f41-31d1-4d4f-93f1-473b243ad662 model=openai/gpt-oss-120b prompt_tokens=1273 completion_tokens=190 total_tokens=1463
+2026-11-11 18:08:17,768 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 11:17:01,000 INFO rag.generation GROQ_CLIENT_INITIALIZED max_concurrency=10
+2026-11-12 11:17:01,002 INFO rag.pipeline INGESTION_STARTED
+2026-11-12 11:17:01,025 INFO rag.ingestion INGEST_JSON_OK path=C:\Users\Sourav Mishra\Downloads\friskit_help_assistant\friskit_help_assistant\data\help-catalog.json topics=67
+2026-11-12 11:17:01,077 INFO rag.ingestion INGEST_COMPLETE documents=70
+2026-11-12 11:17:01,080 INFO rag.ingestion CHUNKING_COMPLETE documents=70 chunks=79
+2026-11-12 11:18:21,055 INFO rag.retrieval EMBEDDING_INDEX_READY model=sentence-transformers/all-MiniLM-L6-v2 chunks=79
+2026-11-12 11:18:21,057 INFO rag.pipeline PIPELINE_READY documents=70 chunks=79 mode=hybrid
+2026-11-12 11:19:20,267 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-12 11:19:20,267 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-12 11:19:20,306 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=31 candidates=5 returned=5 mode=hybrid
+2026-11-12 11:19:20,306 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.2590 relevant=True
+2026-11-12 11:19:20,311 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 11:19:21,748 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-70aa1984-e5db-4cb4-b620-84e43e163691 model=openai/gpt-oss-120b prompt_tokens=1359 completion_tokens=169 total_tokens=1528
+2026-11-12 11:19:21,748 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 11:21:00,075 INFO rag.generation GROQ_CLIENT_INITIALIZED max_concurrency=10
+2026-11-12 11:21:00,075 INFO rag.pipeline INGESTION_STARTED
+2026-11-12 11:21:00,081 INFO rag.ingestion INGEST_JSON_OK path=C:\Users\Sourav Mishra\Downloads\friskit_help_assistant\friskit_help_assistant\data\help-catalog.json topics=67
+2026-11-12 11:21:00,083 INFO rag.ingestion INGEST_COMPLETE documents=70
+2026-11-12 11:21:00,086 INFO rag.ingestion CHUNKING_COMPLETE documents=70 chunks=79
+2026-11-12 11:21:29,045 INFO rag.retrieval EMBEDDING_INDEX_READY model=sentence-transformers/all-MiniLM-L6-v2 chunks=79
+2026-11-12 11:21:29,045 INFO rag.pipeline PIPELINE_READY documents=70 chunks=79 mode=hybrid
+2026-11-12 11:21:49,485 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-12 11:21:49,487 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-12 11:21:49,537 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=31 candidates=79 returned=5 mode=hybrid
+2026-11-12 11:21:49,539 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.6420 relevant=True
+2026-11-12 11:21:49,539 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 11:21:50,666 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-26e3d730-7e27-4d62-b9e6-9fedd3985e0e model=openai/gpt-oss-120b prompt_tokens=1611 completion_tokens=120 total_tokens=1731
+2026-11-12 11:21:50,667 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 11:22:39,859 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-12 11:22:39,859 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-12 11:22:39,889 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=25 candidates=65 returned=5 mode=hybrid
+2026-11-12 11:22:39,889 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.6763 relevant=True
+2026-11-12 11:22:39,891 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 11:22:40,833 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-2732ba1a-6dc7-4b62-8cdb-f23c26337bc0 model=openai/gpt-oss-120b prompt_tokens=1302 completion_tokens=97 total_tokens=1399
+2026-11-12 11:22:40,833 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b
+2026-11-12 11:23:02,560 INFO rag.api CHAT_REQUEST user_id=TEST_USER_001 role=ADMIN current_page=admin-dashboard
+2026-11-12 11:23:02,561 INFO rag.api CHAT_ROUTE route=rag user_id=TEST_USER_001
+2026-11-12 11:23:02,600 INFO rag.retrieval RETRIEVAL_COMPLETE query_chars=30 candidates=79 returned=5 mode=hybrid
+2026-11-12 11:23:02,602 INFO rag.pipeline RETRIEVAL_COMPLETE hits=5 score=0.7681 relevant=True
+2026-11-12 11:23:02,603 INFO rag.generation GROQ_REQUEST_START model=openai/gpt-oss-120b chunks=5
+2026-11-12 11:23:03,559 INFO rag.generation GROQ_TOKEN_USAGE request_id=chatcmpl-6ee8a59b-e12a-4e01-a168-cc77d7b4e420 model=openai/gpt-oss-120b prompt_tokens=1222 completion_tokens=142 total_tokens=1364
+2026-11-12 11:23:03,559 INFO rag.generation GROQ_REQUEST_OK model=openai/gpt-oss-120b

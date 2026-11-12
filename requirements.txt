@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+groq
+python-dotenv
+rank-bm25
+nltk
+pydantic-settings
+Pyjwt

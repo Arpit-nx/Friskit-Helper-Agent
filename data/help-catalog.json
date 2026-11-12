@@ -1,0 +1,3028 @@
+[
+  {
+    "id": "reports.live-margin",
+    "title": "Live Margin",
+    "page_id": "live-margin",
+    "route": "/reports/live-margin",
+    "tour_id": "reports.live-margin",
+    "roles": [
+      "admin",
+      "broker",
+      "group"
+    ],
+    "permission": "read",
+    "description": "Live P&L and margin by client, with product-wise positions and their trades.",
+    "keywords": [
+      "margin",
+      "span",
+      "exposure",
+      "position",
+      "trades",
+      "client",
+      "report",
+      "reports"
+    ],
+    "ask": [
+      "How do I see margins?",
+      "Who is short of margin?",
+      "Where is the margin shortage?",
+      "Which client is using too much margin?",
+      "What will the margin be tomorrow?",
+      "What was the peak margin today?",
+      "Which symbol takes the most margin?",
+      "span exposure utilisation available"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Live Margin, under Margin.",
+      "Or press Ctrl + K anywhere and type live margin."
+    ],
+    "how": [],
+    "figures": [
+      {
+        "name": "SPAN Req",
+        "meaning": "The SPAN margin. The columns before it build it up the way the exchange does."
+      },
+      {
+        "name": "Total Mrgn",
+        "meaning": "SPAN + exposure margin required now."
+      },
+      {
+        "name": "Mrgn Available",
+        "meaning": "What the client has to cover it."
+      },
+      {
+        "name": "Shortage",
+        "meaning": "How far the available margin falls short."
+      },
+      {
+        "name": "Mrgn Utlz",
+        "meaning": "Margin required as a % of margin available. Over 100% is short."
+      },
+      {
+        "name": "T+1 Short",
+        "meaning": "The shortage tomorrow on today's book."
+      },
+      {
+        "name": "Peak Mrgn",
+        "meaning": "The day's highest margin. Peak Time says when."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Who is short right now?",
+        "answer": "Shortage, or Mrgn Utlz over 100%."
+      },
+      {
+        "question": "Will they be short tomorrow?",
+        "answer": "T+1 Short."
+      },
+      {
+        "question": "How bad did it get today?",
+        "answer": "Peak Mrgn, with Peak Short and Peak Time."
+      },
+      {
+        "question": "Which symbol eats the margin?",
+        "answer": "Double click the client and read Share: each symbol's part of Total Mrgn."
+      }
+    ],
+    "hasTour": true
+  },
+  {
+    "id": "hedge-advisory",
+    "title": "Hedge Advisory",
+    "page_id": "hedge-advisory",
+    "route": "/hedge-advisory",
+    "tour_id": "hedge-advisory",
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Futures hedges that would cut each account's margin, and what they save.",
+    "keywords": [
+      "hedge",
+      "advisory",
+      "advice",
+      "margin",
+      "saving",
+      "span",
+      "futures",
+      "square off"
+    ],
+    "ask": [
+      "How can I reduce margin?",
+      "Where is hedge advisory?",
+      "Which hedge saves the most margin?",
+      "What hedge should I take?",
+      "What is the margin saving?",
+      "Is this hedge advice safe to trade?",
+      "futures hedge square off bracket"
+    ],
+    "find": [
+      "Click Hedge Advisory in the left sidebar, just under the console.",
+      "Or press F9 from anywhere."
+    ],
+    "how": [],
+    "figures": [
+      {
+        "name": "Square Offs",
+        "meaning": "Hedges that close a position out rather than offset it."
+      },
+      {
+        "name": "Bracket Edge",
+        "meaning": "Hedges on the edge of a SPAN bracket: a small price move may change the saving."
+      },
+      {
+        "name": "Mrgn Before",
+        "meaning": "Total margin now."
+      },
+      {
+        "name": "Mrgn After",
+        "meaning": "Total margin after the hedges."
+      },
+      {
+        "name": "Saving",
+        "meaning": "Margin freed. Red means the hedge costs more than it saves."
+      },
+      {
+        "name": "Saving %",
+        "meaning": "The saving as a % of the margin now."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Where is the biggest saving?",
+        "answer": "Sort by Saving or Saving %."
+      },
+      {
+        "question": "What does it change?",
+        "answer": "Mrgn Before against Mrgn After."
+      },
+      {
+        "question": "Which advice needs care?",
+        "answer": "Square Offs and Bracket Edge. Inside, a red Negative After means do not trade on it."
+      }
+    ],
+    "hasTour": true
+  },
+  {
+    "id": "admin.dealer-mapping.create",
+    "title": "Add a dealer mapping",
+    "page_id": "dealer-mapping",
+    "route": "/admin/dealer-mapping",
+    "tour_id": "admin.dealer-mapping",
+    "roles": [
+      "admin"
+    ],
+    "permission": "write",
+    "description": "Assign dealers to specific groups, limits, or terminals.",
+    "keywords": [
+      "assign",
+      "terminals",
+      "groups",
+      "limits",
+      "admin",
+      "administration",
+      "management"
+    ],
+    "ask": [
+      "How do I add a dealer mapping?",
+      "How do I map a terminal to a group?",
+      "How do I assign a dealer to a group?",
+      "new terminal id account code custodian"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Dealer Mapping, under People and access.",
+      "Or press Ctrl + K anywhere and type dealer mapping."
+    ],
+    "how": [
+      "Click Add New at the top right of the grid.",
+      "Pick the Exchange and enter the Terminal ID. Both are required.",
+      "Pick the Group, also required. The list comes from Admin+ > Groups, so add the group there first if it is missing.",
+      "Optionally enter the Account Code, Dealer Name and Dealer Code.",
+      "Tick Custodian if the dealer is a custodian.",
+      "Click Save. The new mapping shows in the grid. If the save fails the form stays open with what you entered."
+    ],
+    "figures": [],
+    "questions": [],
+    "hasTour": true
+  },
+  {
+    "id": "admin.dealer-mapping.edit",
+    "title": "Edit a dealer mapping",
+    "page_id": "dealer-mapping",
+    "route": "/admin/dealer-mapping",
+    "tour_id": "admin.dealer-mapping",
+    "roles": [
+      "admin"
+    ],
+    "permission": "write",
+    "description": "Assign dealers to specific groups, limits, or terminals.",
+    "keywords": [
+      "assign",
+      "terminals",
+      "groups",
+      "limits",
+      "admin",
+      "administration",
+      "management"
+    ],
+    "ask": [
+      "How do I edit a dealer mapping?",
+      "How do I change a dealer's group?",
+      "How do I change the terminal id of a dealer?",
+      "update modify dealer name dealer code custodian"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Dealer Mapping, under People and access.",
+      "Or press Ctrl + K anywhere and type dealer mapping."
+    ],
+    "how": [
+      "Double click the mapping's row. Its cells open for editing.",
+      "Change the Terminal ID, Account Code, Group, Dealer Name, Dealer Code or Custodian. The Exchange cannot be changed; delete the mapping and add it again instead.",
+      "Press Enter to save, or Esc to cancel."
+    ],
+    "figures": [],
+    "questions": [],
+    "hasTour": true
+  },
+  {
+    "id": "admin.dealer-mapping.delete",
+    "title": "Delete a dealer mapping",
+    "page_id": "dealer-mapping",
+    "route": "/admin/dealer-mapping",
+    "tour_id": "admin.dealer-mapping",
+    "roles": [
+      "admin"
+    ],
+    "permission": "write",
+    "description": "Assign dealers to specific groups, limits, or terminals.",
+    "keywords": [
+      "assign",
+      "terminals",
+      "groups",
+      "limits",
+      "admin",
+      "administration",
+      "management"
+    ],
+    "ask": [
+      "How do I delete a dealer mapping?",
+      "How do I remove a terminal mapping?",
+      "remove unmap dealer terminal"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Dealer Mapping, under People and access.",
+      "Or press Ctrl + K anywhere and type dealer mapping."
+    ],
+    "how": [
+      "Click the bin icon at the end of the mapping's row.",
+      "Type the row's Terminal ID in the box to confirm.",
+      "Click Confirm Delete. This cannot be undone."
+    ],
+    "figures": [],
+    "questions": [],
+    "hasTour": true
+  },
+  {
+    "id": "admin.dealer-mapping.upload",
+    "title": "Upload dealer mappings from a file",
+    "page_id": "dealer-mapping",
+    "route": "/admin/dealer-mapping",
+    "tour_id": "admin.dealer-mapping",
+    "roles": [
+      "admin"
+    ],
+    "permission": "write",
+    "description": "Assign dealers to specific groups, limits, or terminals.",
+    "keywords": [
+      "assign",
+      "terminals",
+      "groups",
+      "limits",
+      "admin",
+      "administration",
+      "management"
+    ],
+    "ask": [
+      "How do I upload dealer mappings?",
+      "How do I add many dealer mappings at once?",
+      "import bulk csv file sample"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Dealer Mapping, under People and access.",
+      "Or press Ctrl + K anywhere and type dealer mapping."
+    ],
+    "how": [
+      "Click Upload Mappings at the top right of the grid. The import form opens over the grid, set to dealer mappings.",
+      "Download the sample file in the form to see the columns it expects.",
+      "Fill it in, pick it and upload."
+    ],
+    "figures": [],
+    "questions": [],
+    "hasTour": true
+  },
+  {
+    "id": "admin.product-mapping.create",
+    "title": "Add a product mapping",
+    "page_id": "product-mapping",
+    "route": "/admin/product-mapping",
+    "tour_id": "admin.product-mapping",
+    "roles": [
+      "admin"
+    ],
+    "permission": "write",
+    "description": "Link market instruments to internal risk product categories.",
+    "keywords": [
+      "instruments",
+      "categories",
+      "link",
+      "risk",
+      "admin",
+      "administration",
+      "management"
+    ],
+    "ask": [
+      "How do I add a product mapping?",
+      "How do I add a symbol?",
+      "How do I set the lot size of a new symbol?",
+      "new qlot unit multiplier currency instrument"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Product Mapping, under Market data and mapping.",
+      "Or press Ctrl + K anywhere and type product mapping."
+    ],
+    "how": [
+      "Click Add New at the top right of the grid.",
+      "Pick the Exchange and enter the Symbol.",
+      "Enter QLot and Multiplier, each 1 or more.",
+      "Pick the Unit and the Currency.",
+      "Untick Close after save to keep the form open for the next one.",
+      "Click Save. The new mapping shows in the grid."
+    ],
+    "figures": [],
+    "questions": [],
+    "hasTour": true
+  },
+  {
+    "id": "admin.product-mapping.edit",
+    "title": "Edit a product mapping",
+    "page_id": "product-mapping",
+    "route": "/admin/product-mapping",
+    "tour_id": "admin.product-mapping",
+    "roles": [
+      "admin"
+    ],
+    "permission": "write",
+    "description": "Link market instruments to internal risk product categories.",
+    "keywords": [
+      "instruments",
+      "categories",
+      "link",
+      "risk",
+      "admin",
+      "administration",
+      "management"
+    ],
+    "ask": [
+      "How do I edit a product mapping?",
+      "How do I change the lot size of a symbol?",
+      "How do I change the multiplier or currency of a product?",
+      "update modify qlot unit"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Product Mapping, under Market data and mapping.",
+      "Or press Ctrl + K anywhere and type product mapping."
+    ],
+    "how": [
+      "Double click the mapping's row. Its cells open for editing.",
+      "Change QLot, Unit, Currency or Multiplier. The Exchange and Symbol cannot be changed.",
+      "Press Enter to save, or Esc to cancel.",
+      "There is no delete on this page."
+    ],
+    "figures": [],
+    "questions": [],
+    "hasTour": true
+  },
+  {
+    "id": "dashboard",
+    "title": "Console",
+    "page_id": "dashboard",
+    "route": "/",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Firm exposure, risk thresholds and market pulse on one surface.",
+    "keywords": [
+      "home",
+      "overview",
+      "main",
+      "metrics",
+      "pulse",
+      "dashboard",
+      "console"
+    ],
+    "ask": [
+      "Where is Console?",
+      "How do I open Console?",
+      "home overview main metrics pulse dashboard console"
+    ],
+    "find": [
+      "Click Console at the top of the left sidebar.",
+      "Or press F1 from anywhere.",
+      "Or press Ctrl + K anywhere and type console."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "reports",
+    "title": "Reports",
+    "page_id": "reports",
+    "route": "/reports",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Lists every Reports page, grouped by what each one answers.",
+    "keywords": [
+      "report",
+      "reports"
+    ],
+    "ask": [
+      "Where is Reports?",
+      "How do I open Reports?",
+      "report reports"
+    ],
+    "find": [
+      "Click Reports in the left sidebar.",
+      "Or press Ctrl + K anywhere and type reports."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "reports.live-trades",
+    "title": "Live Trades",
+    "page_id": "live-trades",
+    "route": "/reports/live-trades",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Monitor real-time trade executions and streaming tick data.",
+    "keywords": [
+      "report",
+      "reports",
+      "execution",
+      "realtime",
+      "tick",
+      "market",
+      "intraday"
+    ],
+    "ask": [
+      "Where is Live Trades?",
+      "How do I open Live Trades?",
+      "report reports execution realtime tick market intraday"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Live Trades, under Positions.",
+      "Or press Ctrl + K anywhere and type live trades."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "reports.position-summary",
+    "title": "Position Summary",
+    "page_id": "position-summary",
+    "route": "/reports/position-summary",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group"
+    ],
+    "permission": "read",
+    "description": "Profit and loss and margin for every account or dealer on each exchange. The first place to see who is making or losing money and who is short of margin.",
+    "keywords": [
+      "report",
+      "reports",
+      "position",
+      "broker",
+      "pnl",
+      "overview",
+      "dealer"
+    ],
+    "ask": [
+      "Where is Position Summary?",
+      "How do I open Position Summary?",
+      "Who is making or losing the most?",
+      "Is a loss from today or carried in?",
+      "Who needs more margin?",
+      "How big is the book?",
+      "report reports position broker pnl overview dealer"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Position Summary, under Positions.",
+      "Or press Ctrl + K anywhere and type position summary."
+    ],
+    "how": [
+      "Account / Dealer: Per account or per dealer. F2 and F3 open this report already set.",
+      "Double click a client: Its open positions in Position Details, in a new tab.",
+      "Raw, Cr, L, K: Units for money. Your choice is remembered.",
+      "Grid / Card: A card per client with its P&L and margin, for a quick scan."
+    ],
+    "figures": [
+      {
+        "name": "OpngPL",
+        "meaning": "P&L on positions carried in from earlier days."
+      },
+      {
+        "name": "DayPL",
+        "meaning": "P&L from today's trades."
+      },
+      {
+        "name": "NetPL",
+        "meaning": "OpngPL + DayPL. Green is a profit, red a loss."
+      },
+      {
+        "name": "TotalMargin",
+        "meaning": "SPAN margin + exposure margin required now."
+      },
+      {
+        "name": "ShrtMrgn",
+        "meaning": "How far the margin deposited falls short."
+      },
+      {
+        "name": "T1ShrtMrgn",
+        "meaning": "The same shortfall as it will stand tomorrow."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Who is making or losing the most?",
+        "answer": "Sort by NetPL."
+      },
+      {
+        "question": "Is a loss from today or carried in?",
+        "answer": "Compare DayPL with OpngPL: here today's trades are making up for an older loss."
+      },
+      {
+        "question": "Who needs more margin?",
+        "answer": "ShrtMrgn for now, T1ShrtMrgn for tomorrow."
+      },
+      {
+        "question": "How big is the book?",
+        "answer": "TotalMargin is what it ties up."
+      }
+    ],
+    "hasTour": false
+  },
+  {
+    "id": "reports.position-summary.dealer-summary",
+    "title": "Dealer Summary",
+    "page_id": "position-summary",
+    "route": "/reports/position-summary?dealer-type=D",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group"
+    ],
+    "permission": "read",
+    "description": "Profit and loss and margin for every account or dealer on each exchange. The first place to see who is making or losing money and who is short of margin.",
+    "keywords": [
+      "report",
+      "reports",
+      "dealer",
+      "performance",
+      "pnl",
+      "overview",
+      "limits"
+    ],
+    "ask": [
+      "Where is Dealer Summary?",
+      "How do I open Dealer Summary?",
+      "Who is making or losing the most?",
+      "Is a loss from today or carried in?",
+      "Who needs more margin?",
+      "How big is the book?",
+      "report reports dealer performance pnl overview limits"
+    ],
+    "find": [
+      "Press F2 from anywhere.",
+      "Or press Ctrl + K anywhere and type dealer summary."
+    ],
+    "how": [
+      "Account / Dealer: Per account or per dealer. F2 and F3 open this report already set.",
+      "Double click a client: Its open positions in Position Details, in a new tab.",
+      "Raw, Cr, L, K: Units for money. Your choice is remembered.",
+      "Grid / Card: A card per client with its P&L and margin, for a quick scan."
+    ],
+    "figures": [
+      {
+        "name": "OpngPL",
+        "meaning": "P&L on positions carried in from earlier days."
+      },
+      {
+        "name": "DayPL",
+        "meaning": "P&L from today's trades."
+      },
+      {
+        "name": "NetPL",
+        "meaning": "OpngPL + DayPL. Green is a profit, red a loss."
+      },
+      {
+        "name": "TotalMargin",
+        "meaning": "SPAN margin + exposure margin required now."
+      },
+      {
+        "name": "ShrtMrgn",
+        "meaning": "How far the margin deposited falls short."
+      },
+      {
+        "name": "T1ShrtMrgn",
+        "meaning": "The same shortfall as it will stand tomorrow."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Who is making or losing the most?",
+        "answer": "Sort by NetPL."
+      },
+      {
+        "question": "Is a loss from today or carried in?",
+        "answer": "Compare DayPL with OpngPL: here today's trades are making up for an older loss."
+      },
+      {
+        "question": "Who needs more margin?",
+        "answer": "ShrtMrgn for now, T1ShrtMrgn for tomorrow."
+      },
+      {
+        "question": "How big is the book?",
+        "answer": "TotalMargin is what it ties up."
+      }
+    ],
+    "hasTour": false
+  },
+  {
+    "id": "reports.position-summary.account-summary",
+    "title": "Account Summary",
+    "page_id": "position-summary",
+    "route": "/reports/position-summary?dealer-type=B",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group"
+    ],
+    "permission": "read",
+    "description": "Profit and loss and margin for every account or dealer on each exchange. The first place to see who is making or losing money and who is short of margin.",
+    "keywords": [
+      "report",
+      "reports",
+      "account",
+      "performance",
+      "pnl",
+      "overview",
+      "limits"
+    ],
+    "ask": [
+      "Where is Account Summary?",
+      "How do I open Account Summary?",
+      "Who is making or losing the most?",
+      "Is a loss from today or carried in?",
+      "Who needs more margin?",
+      "How big is the book?",
+      "report reports account performance pnl overview limits"
+    ],
+    "find": [
+      "Press F3 from anywhere.",
+      "Or press Ctrl + K anywhere and type account summary."
+    ],
+    "how": [
+      "Account / Dealer: Per account or per dealer. F2 and F3 open this report already set.",
+      "Double click a client: Its open positions in Position Details, in a new tab.",
+      "Raw, Cr, L, K: Units for money. Your choice is remembered.",
+      "Grid / Card: A card per client with its P&L and margin, for a quick scan."
+    ],
+    "figures": [
+      {
+        "name": "OpngPL",
+        "meaning": "P&L on positions carried in from earlier days."
+      },
+      {
+        "name": "DayPL",
+        "meaning": "P&L from today's trades."
+      },
+      {
+        "name": "NetPL",
+        "meaning": "OpngPL + DayPL. Green is a profit, red a loss."
+      },
+      {
+        "name": "TotalMargin",
+        "meaning": "SPAN margin + exposure margin required now."
+      },
+      {
+        "name": "ShrtMrgn",
+        "meaning": "How far the margin deposited falls short."
+      },
+      {
+        "name": "T1ShrtMrgn",
+        "meaning": "The same shortfall as it will stand tomorrow."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Who is making or losing the most?",
+        "answer": "Sort by NetPL."
+      },
+      {
+        "question": "Is a loss from today or carried in?",
+        "answer": "Compare DayPL with OpngPL: here today's trades are making up for an older loss."
+      },
+      {
+        "question": "Who needs more margin?",
+        "answer": "ShrtMrgn for now, T1ShrtMrgn for tomorrow."
+      },
+      {
+        "question": "How big is the book?",
+        "answer": "TotalMargin is what it ties up."
+      }
+    ],
+    "hasTour": false
+  },
+  {
+    "id": "reports.position-details",
+    "title": "Position Details",
+    "page_id": "position-details",
+    "route": "/reports/position-details",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group"
+    ],
+    "permission": "read",
+    "description": "Every contract each account or dealer holds, with what was carried in, bought, sold and is open now, and its mark-to-market.",
+    "keywords": [
+      "report",
+      "reports",
+      "holdings",
+      "open",
+      "live",
+      "position",
+      "inventory"
+    ],
+    "ask": [
+      "Where is Position Details?",
+      "How do I open Position Details?",
+      "Is it long or short?",
+      "Is it making money?",
+      "What was traded today?",
+      "How big is the position?",
+      "report reports holdings open live position inventory"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Position Details, under Positions.",
+      "Or press Ctrl + K anywhere and type position details."
+    ],
+    "how": [
+      "Open Position: Hides contracts that have been squared off.",
+      "Double click a Symbol: The trades that make up that position, in Detail Trades.",
+      "Double click Exchange: All the client's trades on that exchange."
+    ],
+    "figures": [
+      {
+        "name": "BuyQty",
+        "meaning": "Bought today, next to its average price."
+      },
+      {
+        "name": "SellQty",
+        "meaning": "Sold today, next to its average price."
+      },
+      {
+        "name": "NetQty",
+        "meaning": "Carried in + bought - sold. Positive is long, negative short."
+      },
+      {
+        "name": "LTP",
+        "meaning": "Last price. Green above the open price, red below it."
+      },
+      {
+        "name": "MtM (INR)",
+        "meaning": "Mark-to-market P&L in rupees."
+      },
+      {
+        "name": "Exposure (INR)",
+        "meaning": "Value of the position in rupees."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Is it long or short?",
+        "answer": "NetQty: this one is short 50."
+      },
+      {
+        "question": "Is it making money?",
+        "answer": "Sort by MtM to find the biggest winners and losers."
+      },
+      {
+        "question": "What was traded today?",
+        "answer": "BuyQty and SellQty, with their average prices."
+      },
+      {
+        "question": "How big is the position?",
+        "answer": "Exposure (INR)."
+      }
+    ],
+    "hasTour": false
+  },
+  {
+    "id": "reports.dealer-wise",
+    "title": "Dealer Wise PL Exposure",
+    "page_id": "dealer-wise",
+    "route": "/reports/dealer-wise",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Detailed profit and loss exposure grouped by individual dealers.",
+    "keywords": [
+      "report",
+      "reports",
+      "dealer",
+      "pnl",
+      "exposure",
+      "individual",
+      "breakdown"
+    ],
+    "ask": [
+      "Where is Dealer Wise PL Exposure?",
+      "How do I open Dealer Wise PL Exposure?",
+      "report reports dealer pnl exposure individual breakdown"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Dealer Wise PL Exposure, under Profit and loss.",
+      "Or press Ctrl + K anywhere and type dealer wise pl exposure."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "reports.combined-eq",
+    "title": "Combined EQ",
+    "page_id": "combined-eq",
+    "route": "/reports/combined-eq",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Every equity holding of every dealer or account for the day: what was held, bought, sold and is held now, with the P&L.",
+    "keywords": [
+      "report",
+      "reports",
+      "equity",
+      "consolidated",
+      "total",
+      "balances"
+    ],
+    "ask": [
+      "Where is Combined EQ?",
+      "How do I open Combined EQ?",
+      "What is held now?",
+      "Who made or lost the most?",
+      "Who holds a stock?",
+      "report reports equity consolidated total balances"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Combined EQ, under Positions.",
+      "Or press F8 from anywhere.",
+      "Or press Ctrl + K anywhere and type combined eq."
+    ],
+    "how": [
+      "All / Dealer / Account: Whose holdings to list. All is for admins.",
+      "Double click a Scrip: That client's position in it, in Position Details.",
+      "A pulsing E on a Scrip: A corporate action. Hover it for what it is and its ex-date.",
+      "Filters stay in the address: A filtered view can be bookmarked or shared."
+    ],
+    "figures": [
+      {
+        "name": "OpQty",
+        "meaning": "Held at the start of the day."
+      },
+      {
+        "name": "BuyQty",
+        "meaning": "Bought today, next to its average price."
+      },
+      {
+        "name": "SellQty",
+        "meaning": "Sold today, next to its average price."
+      },
+      {
+        "name": "ClQty",
+        "meaning": "Held now. Green long, red short."
+      },
+      {
+        "name": "GrossPL",
+        "meaning": "P&L before charges. Green profit, red loss."
+      }
+    ],
+    "questions": [
+      {
+        "question": "What is held now?",
+        "answer": "ClQty: what was held, plus bought, less sold."
+      },
+      {
+        "question": "Who made or lost the most?",
+        "answer": "Sort by GrossPL."
+      },
+      {
+        "question": "Who holds a stock?",
+        "answer": "Filter Scrip, then read ClQty."
+      }
+    ],
+    "hasTour": false
+  },
+  {
+    "id": "reports.account-margin",
+    "title": "Account Margin",
+    "page_id": "account-margin",
+    "route": "/reports/account-margin",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "For each account, the margin required against the cash and collateral it holds, and any shortfall.",
+    "keywords": [
+      "report",
+      "reports",
+      "cash",
+      "collateral",
+      "account",
+      "margin",
+      "exposure"
+    ],
+    "ask": [
+      "Where is Account Margin?",
+      "How do I open Account Margin?",
+      "Who is short of margin?",
+      "Who is short of cash?",
+      "How much collateral counts?",
+      "Which segment is stretched?",
+      "report reports cash collateral account margin exposure"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Account Margin, under Margin.",
+      "Or press Ctrl + K anywhere and type account margin."
+    ],
+    "how": [
+      "Segment Breakup: The same figures for EQ, FO and CO side by side.",
+      "Total row: The whole book, pinned at the bottom."
+    ],
+    "figures": [
+      {
+        "name": "AppMargin",
+        "meaning": "Total margin required."
+      },
+      {
+        "name": "TotCollateral",
+        "meaning": "Cash, cash collateral and pledged securities."
+      },
+      {
+        "name": "EfctvCollateral",
+        "meaning": "The part of the collateral that counts towards margin."
+      },
+      {
+        "name": "ShortCash",
+        "meaning": "Cash short of the cash part of the margin."
+      },
+      {
+        "name": "ShortMrgn",
+        "meaning": "Margin required beyond the effective collateral."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Who is short of margin?",
+        "answer": "ShortMrgn."
+      },
+      {
+        "question": "Who is short of cash?",
+        "answer": "ShortCash."
+      },
+      {
+        "question": "How much collateral counts?",
+        "answer": "EfctvCollateral against TotCollateral: here 48 of 60."
+      },
+      {
+        "question": "Which segment is stretched?",
+        "answer": "Turn on Segment Breakup: Utlzn % per segment, red above 70%."
+      }
+    ],
+    "hasTour": false
+  },
+  {
+    "id": "reports.eq-margin-summary",
+    "title": "Equity Margin",
+    "page_id": "eq-margin-summary",
+    "route": "/reports/eq-margin-summary",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Margin on cash-equity positions for each account or dealer, with the MTM losses in it.",
+    "keywords": [
+      "report",
+      "reports",
+      "equity",
+      "margin",
+      "exposure",
+      "mtm",
+      "var"
+    ],
+    "ask": [
+      "Where is Equity Margin?",
+      "How do I open Equity Margin?",
+      "Who carries the most margin?",
+      "How much of it is losses?",
+      "Which stocks drive it?",
+      "report reports equity margin exposure mtm var"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Equity Margin, under Margin.",
+      "Or press Ctrl + K anywhere and type equity margin."
+    ],
+    "how": [
+      "Double click a client: Its stock-wise margin in Equity Margin Details, in a new tab."
+    ],
+    "figures": [
+      {
+        "name": "Exposure",
+        "meaning": "Value of the equity positions."
+      },
+      {
+        "name": "AppVarMargin",
+        "meaning": "VaR margin on them."
+      },
+      {
+        "name": "MTM Losses",
+        "meaning": "Unrealised losses on them."
+      },
+      {
+        "name": "TotalMargin",
+        "meaning": "VaR margin + MTM losses."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Who carries the most margin?",
+        "answer": "Sort by TotalMargin."
+      },
+      {
+        "question": "How much of it is losses?",
+        "answer": "MTM Losses against TotalMargin."
+      },
+      {
+        "question": "Which stocks drive it?",
+        "answer": "Double click the client for its stocks."
+      }
+    ],
+    "hasTour": false
+  },
+  {
+    "id": "reports.eq-margin-details",
+    "title": "Equity Margin Details",
+    "page_id": "eq-margin-details",
+    "route": "/reports/eq-margin-details",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "The equity margin of one account or dealer, stock by stock: the rate the exchange applies, the value held and the margin it costs.",
+    "keywords": [
+      "report",
+      "reports",
+      "equity",
+      "margin",
+      "scrip",
+      "detail"
+    ],
+    "ask": [
+      "Where is Equity Margin Details?",
+      "How do I open Equity Margin Details?",
+      "Which stocks cost the most?",
+      "Why is one stock dear?",
+      "Which are losing money?",
+      "report reports equity margin scrip detail"
+    ],
+    "find": [
+      "Press Ctrl + K anywhere and type equity margin details."
+    ],
+    "how": [
+      "Filter the first column: The report stays empty until an account or dealer is chosen."
+    ],
+    "figures": [
+      {
+        "name": "AppMrgn",
+        "meaning": "The margin rate applied: SecVar, ELM and AddMrgn together."
+      },
+      {
+        "name": "Exposure",
+        "meaning": "Quantity held x closing price."
+      },
+      {
+        "name": "VMargin",
+        "meaning": "Exposure x the rate."
+      },
+      {
+        "name": "MTM Loss",
+        "meaning": "Unrealised loss on the stock."
+      },
+      {
+        "name": "Total Margin",
+        "meaning": "VMargin + MTM Loss."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Which stocks cost the most?",
+        "answer": "Sort by Total Margin."
+      },
+      {
+        "question": "Why is one stock dear?",
+        "answer": "A high AppMrgn rate on a large Exposure."
+      },
+      {
+        "question": "Which are losing money?",
+        "answer": "MTM Loss."
+      }
+    ],
+    "hasTour": false
+  },
+  {
+    "id": "reports.obligation-cum-margin",
+    "title": "Obligation Cum Margin",
+    "page_id": "obligation-cum-margin",
+    "route": "/reports/obligation-cum-margin",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "For each account or dealer, the money it owes or is owed at settlement, next to its margin, collateral and MTM.",
+    "keywords": [
+      "report",
+      "reports",
+      "obligation",
+      "margin",
+      "exposure",
+      "mtm",
+      "net"
+    ],
+    "ask": [
+      "Where is Obligation Cum Margin?",
+      "How do I open Obligation Cum Margin?",
+      "Who has funds to settle?",
+      "Who is short of margin?",
+      "Who made or lost money?",
+      "report reports obligation margin exposure mtm net"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Obligation Cum Margin, under Margin.",
+      "Or press Ctrl + K anywhere and type obligation cum margin."
+    ],
+    "how": [
+      "Segment Breakup: The same figures for EQ, FO and CO side by side.",
+      "Total row: The whole book, pinned at the bottom."
+    ],
+    "figures": [
+      {
+        "name": "Margins",
+        "meaning": "Margin required."
+      },
+      {
+        "name": "Collaterals",
+        "meaning": "Collateral held against it."
+      },
+      {
+        "name": "MTM P&L",
+        "meaning": "Mark-to-market. Green profit, red loss."
+      },
+      {
+        "name": "Net Obligation",
+        "meaning": "Funds due at settlement."
+      },
+      {
+        "name": "ShortMrgn",
+        "meaning": "Margin required beyond the collateral."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Who has funds to settle?",
+        "answer": "Net Obligation."
+      },
+      {
+        "question": "Who is short of margin?",
+        "answer": "ShortMrgn: Margins less Collaterals."
+      },
+      {
+        "question": "Who made or lost money?",
+        "answer": "MTM P&L."
+      }
+    ],
+    "hasTour": false
+  },
+  {
+    "id": "reports.live-pl-summary",
+    "title": "Live PL Summary",
+    "page_id": "live-pl-summary",
+    "route": "/reports/live-pl-summary",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Realized, unrealized and net PL by dealer and account.",
+    "keywords": [
+      "report",
+      "reports",
+      "pl",
+      "pnl",
+      "profit",
+      "loss",
+      "realized",
+      "unrealized",
+      "live",
+      "summary"
+    ],
+    "ask": [
+      "Where is Live PL Summary?",
+      "How do I open Live PL Summary?",
+      "report reports pl pnl profit loss realized unrealized live summary"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Live PL Summary, under Profit and loss.",
+      "Or press Ctrl + K anywhere and type live pl summary."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "reports.live-pl-details",
+    "title": "Live PL Details",
+    "page_id": "live-pl-details",
+    "route": "/reports/live-pl-details",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Scrip-wise realized and unrealized PL for a dealer or account.",
+    "keywords": [
+      "report",
+      "reports",
+      "pl",
+      "pnl",
+      "profit",
+      "loss",
+      "scrip",
+      "detail",
+      "live",
+      "summary"
+    ],
+    "ask": [
+      "Where is Live PL Details?",
+      "How do I open Live PL Details?",
+      "report reports pl pnl profit loss scrip detail live summary"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Live PL Details, under Profit and loss.",
+      "Or press Ctrl + K anywhere and type live pl details."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "reports.probable-physical-deliveries-summary",
+    "title": "Probable Physical Deliveries",
+    "page_id": "probable-physical-deliveries-summary",
+    "route": "/reports/probable-physical-deliveries-summary",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Shares each account or dealer is likely to deliver or receive: from stock F&O that settles physically at expiry and from cash-market trades.",
+    "keywords": [
+      "report",
+      "reports",
+      "physical",
+      "delivery",
+      "deliverable",
+      "obligation",
+      "expiry",
+      "settlement"
+    ],
+    "ask": [
+      "Where is Probable Physical Deliveries?",
+      "How do I open Probable Physical Deliveries?",
+      "Who has a delivery at expiry?",
+      "What is the net?",
+      "report reports physical delivery deliverable obligation expiry settlement"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Probable Physical Deliveries, under Deliveries.",
+      "Or press Ctrl + K anywhere and type probable physical deliveries."
+    ],
+    "how": [
+      "Double click a client: The contracts behind all its deliveries, in a new tab.",
+      "Double click a Symbol: The contracts behind that one delivery."
+    ],
+    "figures": [
+      {
+        "name": "Physical Delivery",
+        "meaning": "From stock futures and in-the-money options at expiry."
+      },
+      {
+        "name": "EQ Delivery",
+        "meaning": "From cash-market trades."
+      },
+      {
+        "name": "Net Delivery",
+        "meaning": "The two together: what is left to deliver or receive."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Who has a delivery at expiry?",
+        "answer": "Physical Delivery."
+      },
+      {
+        "question": "What is the net?",
+        "answer": "Net Delivery: the cash-market trades offset part of the expiry delivery."
+      }
+    ],
+    "hasTour": false
+  },
+  {
+    "id": "reports.probable-physical-deliveries-details",
+    "title": "Probable Physical Delivery Details",
+    "page_id": "probable-physical-deliveries-details",
+    "route": "/reports/probable-physical-deliveries-details",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "The contracts behind each probable delivery, with their net quantity and average price.",
+    "keywords": [
+      "report",
+      "reports",
+      "physical",
+      "delivery",
+      "strike",
+      "option",
+      "vwap",
+      "netqty",
+      "detail"
+    ],
+    "ask": [
+      "Where is Probable Physical Delivery Details?",
+      "How do I open Probable Physical Delivery Details?",
+      "Which contracts end in delivery?",
+      "At what price was it built?",
+      "report reports physical delivery strike option vwap netqty detail"
+    ],
+    "find": [
+      "Press Ctrl + K anywhere and type probable physical delivery details."
+    ],
+    "how": [
+      "Clear filters: Back to every contract of every client."
+    ],
+    "figures": [
+      {
+        "name": "Net Qty",
+        "meaning": "Open quantity. Positive long, negative short."
+      },
+      {
+        "name": "VWAP",
+        "meaning": "Average price of the position, weighted by volume."
+      },
+      {
+        "name": "Delta Qty",
+        "meaning": "The quantity that goes to delivery."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Which contracts end in delivery?",
+        "answer": "Delta Qty."
+      },
+      {
+        "question": "At what price was it built?",
+        "answer": "VWAP."
+      }
+    ],
+    "hasTour": false
+  },
+  {
+    "id": "reports.security-pledge",
+    "title": "Pledged Securities [NCL]",
+    "page_id": "security-pledge",
+    "route": "/reports/security-pledge",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "View NCL pledged securities and their haircut valuations.",
+    "keywords": [
+      "report",
+      "reports",
+      "pledge",
+      "ncl",
+      "collateral",
+      "haircut",
+      "securities"
+    ],
+    "ask": [
+      "Where is Pledged Securities [NCL]?",
+      "How do I open Pledged Securities [NCL]?",
+      "report reports pledge ncl collateral haircut securities"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Pledged Securities [NCL].",
+      "Or press Ctrl + K anywhere and type pledged securities [ncl]."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "reports.client-collaterals",
+    "title": "Client Collaterals [NCL]",
+    "page_id": "client-collaterals",
+    "route": "/reports/client-collaterals",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "View NCL client collateral allocations by account.",
+    "keywords": [
+      "report",
+      "reports",
+      "collateral",
+      "ncl",
+      "cash",
+      "margin",
+      "account"
+    ],
+    "ask": [
+      "Where is Client Collaterals [NCL]?",
+      "How do I open Client Collaterals [NCL]?",
+      "report reports collateral ncl cash margin account"
+    ],
+    "find": [
+      "Open Reports in the left sidebar.",
+      "Pick Client Collaterals [NCL].",
+      "Or press Ctrl + K anywhere and type client collaterals [ncl]."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "graphs",
+    "title": "Graphs",
+    "page_id": "graphs",
+    "route": "/graphs",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Lists every Graphs page, grouped by what each one answers.",
+    "keywords": [
+      "graph",
+      "graphs",
+      "chart",
+      "charts"
+    ],
+    "ask": [
+      "Where is Graphs?",
+      "How do I open Graphs?",
+      "graph graphs chart charts"
+    ],
+    "find": [
+      "Click Graphs in the left sidebar.",
+      "Or press Ctrl + K anywhere and type graphs."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "graphs.realtime-exposure",
+    "title": "Realtime Exposure",
+    "page_id": "realtime-exposure",
+    "route": "/graphs/realtime-exposure",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Live graphical tracking of market exposure and risk thresholds.",
+    "keywords": [
+      "graph",
+      "graphs",
+      "chart",
+      "charts",
+      "risk",
+      "live",
+      "monitor"
+    ],
+    "ask": [
+      "Where is Realtime Exposure?",
+      "How do I open Realtime Exposure?",
+      "graph graphs chart charts risk live monitor"
+    ],
+    "find": [
+      "Open Graphs in the left sidebar.",
+      "Pick Realtime Exposure.",
+      "Or press Ctrl + K anywhere and type realtime exposure."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "graphs.delta-equivalent-analysis",
+    "title": "Delta Equivalent Analysis",
+    "page_id": "delta-equivalent-analysis",
+    "route": "/graphs/delta-equivalent-analysis",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Intraday trend of each account's delta-equivalent position (net qty x delta) per F&O symbol.",
+    "keywords": [
+      "graph",
+      "graphs",
+      "chart",
+      "charts",
+      "delta",
+      "equivalent",
+      "eq",
+      "trends",
+      "greeks",
+      "analysis"
+    ],
+    "ask": [
+      "Where is Delta Equivalent Analysis?",
+      "How do I open Delta Equivalent Analysis?",
+      "graph graphs chart charts delta equivalent eq trends greeks analysis"
+    ],
+    "find": [
+      "Open Graphs in the left sidebar.",
+      "Pick Delta Equivalent Analysis.",
+      "Or press F4 from anywhere.",
+      "Or press Ctrl + K anywhere and type delta equivalent analysis."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "graphs.friskindx",
+    "title": "FriskIndx Analysis",
+    "page_id": "friskindx",
+    "route": "/graphs/friskindx",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Every account's or dealer's FriskIndx through the day, worst first.",
+    "keywords": [
+      "graph",
+      "graphs",
+      "chart",
+      "charts",
+      "friskindx",
+      "frisk",
+      "risk index",
+      "index",
+      "entity"
+    ],
+    "ask": [
+      "Where is FriskIndx Analysis?",
+      "How do I open FriskIndx Analysis?",
+      "graph graphs chart charts friskindx frisk risk index index entity"
+    ],
+    "find": [
+      "Open Graphs in the left sidebar.",
+      "Pick FriskIndx Analysis.",
+      "Or press Ctrl + K anywhere and type friskindx analysis."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "analytics",
+    "title": "Analytics",
+    "page_id": "analytics",
+    "route": "/analytics",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Lists every Analytics page, grouped by what each one answers.",
+    "keywords": [
+      "analytics",
+      "analysis"
+    ],
+    "ask": [
+      "Where is Analytics?",
+      "How do I open Analytics?",
+      "analytics analysis"
+    ],
+    "find": [
+      "Click Analytics in the left sidebar.",
+      "Or press Ctrl + K anywhere and type analytics."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "analytics.product-price-stress-test",
+    "title": "Product Price Stress Test",
+    "page_id": "product-price-stress-test",
+    "route": "/analytics/product-price-stress-test",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Simulate underlying price fluctuations and their impact on portfolios.",
+    "keywords": [
+      "analytics",
+      "analysis",
+      "simulation",
+      "impact",
+      "fluctuation",
+      "test",
+      "what-if"
+    ],
+    "ask": [
+      "Where is Product Price Stress Test?",
+      "How do I open Product Price Stress Test?",
+      "analytics analysis simulation impact fluctuation test what-if"
+    ],
+    "find": [
+      "Open Analytics in the left sidebar.",
+      "Pick Product Price Stress Test, under Stress tests.",
+      "Or press Ctrl + K anywhere and type product price stress test."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "analytics.portfolio-stress-test",
+    "title": "Portfolio Stress Test",
+    "page_id": "portfolio-stress-test",
+    "route": "/analytics/portfolio-stress-test",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Run aggregate stress tests on complete broker portfolios.",
+    "keywords": [
+      "analytics",
+      "analysis",
+      "aggregate",
+      "risk",
+      "var",
+      "scenario",
+      "test"
+    ],
+    "ask": [
+      "Where is Portfolio Stress Test?",
+      "How do I open Portfolio Stress Test?",
+      "analytics analysis aggregate risk var scenario test"
+    ],
+    "find": [
+      "Open Analytics in the left sidebar.",
+      "Pick Portfolio Stress Test, under Stress tests.",
+      "Or press Ctrl + K anywhere and type portfolio stress test."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "analytics.client-wise-greek",
+    "title": "Client Wise Greek",
+    "page_id": "client-wise-greek",
+    "route": "/analytics/client-wise-greek",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Options Greeks analysis segmented by individual clients.",
+    "keywords": [
+      "analytics",
+      "analysis",
+      "delta",
+      "gamma",
+      "theta",
+      "vega",
+      "options",
+      "client"
+    ],
+    "ask": [
+      "Where is Client Wise Greek?",
+      "How do I open Client Wise Greek?",
+      "analytics analysis delta gamma theta vega options client"
+    ],
+    "find": [
+      "Open Analytics in the left sidebar.",
+      "Pick Client Wise Greek, under Greeks.",
+      "Or press Ctrl + K anywhere and type client wise greek."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "analytics.client-wise-greek.client-wise-greek-detail",
+    "title": "Client Wise Greek Detail",
+    "page_id": "client-wise-greek-detail",
+    "route": "/analytics/client-wise-greek/client-wise-greek-detail",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Position-level Greek values for a single client.",
+    "keywords": [
+      "analytics",
+      "analysis",
+      "delta",
+      "gamma",
+      "theta",
+      "vega",
+      "options",
+      "client",
+      "detail"
+    ],
+    "ask": [
+      "Where is Client Wise Greek Detail?",
+      "How do I open Client Wise Greek Detail?",
+      "analytics analysis delta gamma theta vega options client detail"
+    ],
+    "find": [
+      "Press Ctrl + K anywhere and type client wise greek detail."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "analytics.product-wise-greek",
+    "title": "Product Wise Greek",
+    "page_id": "product-wise-greek",
+    "route": "/analytics/product-wise-greek",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Options Greeks analysis segmented by financial product.",
+    "keywords": [
+      "analytics",
+      "analysis",
+      "delta",
+      "gamma",
+      "theta",
+      "vega",
+      "options",
+      "product"
+    ],
+    "ask": [
+      "Where is Product Wise Greek?",
+      "How do I open Product Wise Greek?",
+      "analytics analysis delta gamma theta vega options product"
+    ],
+    "find": [
+      "Open Analytics in the left sidebar.",
+      "Pick Product Wise Greek, under Greeks.",
+      "Or press Ctrl + K anywhere and type product wise greek."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "analytics.mwpl-exposure",
+    "title": "MWPL Exposure",
+    "page_id": "mwpl-exposure",
+    "route": "/analytics/mwpl-exposure",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Market Wide Position Limit and sentimental exposure tracking.",
+    "keywords": [
+      "analytics",
+      "analysis",
+      "limits",
+      "sentiment",
+      "market",
+      "wide",
+      "position"
+    ],
+    "ask": [
+      "Where is MWPL Exposure?",
+      "How do I open MWPL Exposure?",
+      "analytics analysis limits sentiment market wide position"
+    ],
+    "find": [
+      "Open Analytics in the left sidebar.",
+      "Pick MWPL Exposure, under Stress tests.",
+      "Or press Ctrl + K anywhere and type mwpl exposure."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "analytics.delta-equity-summary",
+    "title": "Delta EQ Summary",
+    "page_id": "delta-equity-summary",
+    "route": "/analytics/delta-equity-summary",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "High-level aggregation of Delta Equity metrics.",
+    "keywords": [
+      "analytics",
+      "analysis",
+      "delta",
+      "equity",
+      "summary",
+      "aggregation"
+    ],
+    "ask": [
+      "Where is Delta EQ Summary?",
+      "How do I open Delta EQ Summary?",
+      "analytics analysis delta equity summary aggregation"
+    ],
+    "find": [
+      "Open Analytics in the left sidebar.",
+      "Pick Delta EQ Summary, under Delta equity.",
+      "Or press Ctrl + K anywhere and type delta eq summary."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "analytics.delta-equity-detail",
+    "title": "Delta EQ Detail",
+    "page_id": "delta-equity-detail",
+    "route": "/analytics/delta-equity-detail",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Granular breakdown of Delta Equity calculations.",
+    "keywords": [
+      "analytics",
+      "analysis",
+      "delta",
+      "equity",
+      "detail",
+      "granular",
+      "breakdown"
+    ],
+    "ask": [
+      "Where is Delta EQ Detail?",
+      "How do I open Delta EQ Detail?",
+      "analytics analysis delta equity detail granular breakdown"
+    ],
+    "find": [
+      "Open Analytics in the left sidebar.",
+      "Pick Delta EQ Detail, under Delta equity.",
+      "Or press Ctrl + K anywhere and type delta eq detail."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "utilities",
+    "title": "Utilities",
+    "page_id": "utilities",
+    "route": "/utilities",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Lists every Utilities page, grouped by what each one answers.",
+    "keywords": [
+      "utility",
+      "utilities",
+      "tools"
+    ],
+    "ask": [
+      "Where is Utilities?",
+      "How do I open Utilities?",
+      "utility utilities tools"
+    ],
+    "find": [
+      "Click Utilities in the left sidebar.",
+      "Or press Ctrl + K anywhere and type utilities."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "utilities.exchange-circulars",
+    "title": "Exchange Circulars",
+    "page_id": "exchange-circulars",
+    "route": "/utilities/exchange-circulars",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Browse exchange circulars and regulatory notices.",
+    "keywords": [
+      "utility",
+      "utilities",
+      "tools",
+      "exchange",
+      "circulars",
+      "notices",
+      "regulatory"
+    ],
+    "ask": [
+      "Where is Exchange Circulars?",
+      "How do I open Exchange Circulars?",
+      "utility utilities tools exchange circulars notices regulatory"
+    ],
+    "find": [
+      "Open Utilities in the left sidebar.",
+      "Pick Exchange Circulars, under Market information.",
+      "Or press Ctrl + K anywhere and type exchange circulars."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "utilities.corporate-actions",
+    "title": "Corporate Actions",
+    "page_id": "corporate-actions",
+    "route": "/utilities/corporate-actions",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Track dividends, splits and other corporate events (NSE/BSE).",
+    "keywords": [
+      "utility",
+      "utilities",
+      "tools",
+      "dividends",
+      "splits",
+      "events",
+      "nse",
+      "bse"
+    ],
+    "ask": [
+      "Where is Corporate Actions?",
+      "How do I open Corporate Actions?",
+      "utility utilities tools dividends splits events nse bse"
+    ],
+    "find": [
+      "Open Utilities in the left sidebar.",
+      "Pick Corporate Actions, under Market information.",
+      "Or press Ctrl + K anywhere and type corporate actions."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "utilities.export-tradebook",
+    "title": "Export TradeBook",
+    "page_id": "export-tradebook",
+    "route": "/utilities/export-tradebook",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Download and export historical trade logs and books.",
+    "keywords": [
+      "utility",
+      "utilities",
+      "tools",
+      "download",
+      "csv",
+      "excel",
+      "history",
+      "logs"
+    ],
+    "ask": [
+      "Where is Export TradeBook?",
+      "How do I open Export TradeBook?",
+      "utility utilities tools download csv excel history logs"
+    ],
+    "find": [
+      "Press Ctrl + K anywhere and type export tradebook. It opens as a dialog over the page you are on."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "utilities.import-logs",
+    "title": "Import Logs",
+    "page_id": "import-logs",
+    "route": "/utilities/import-logs",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Audit trail and status logs for system file imports.",
+    "keywords": [
+      "utility",
+      "utilities",
+      "tools",
+      "file import logs",
+      "file",
+      "import",
+      "audit",
+      "trail",
+      "status",
+      "upload"
+    ],
+    "ask": [
+      "Where is Import Logs?",
+      "How do I open Import Logs?",
+      "utility utilities tools file import logs file import audit trail status upload"
+    ],
+    "find": [
+      "Open Utilities in the left sidebar.",
+      "Pick Import Logs, under Your data.",
+      "Or press F7 from anywhere.",
+      "Or press Ctrl + K anywhere and type import logs."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "utilities.notifications",
+    "title": "Notifications",
+    "page_id": "notifications",
+    "route": "/utilities/notifications",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "System alerts, margin calls and general notifications.",
+    "keywords": [
+      "utility",
+      "utilities",
+      "tools",
+      "alerts",
+      "margin",
+      "calls",
+      "messages"
+    ],
+    "ask": [
+      "Where is Notifications?",
+      "How do I open Notifications?",
+      "utility utilities tools alerts margin calls messages"
+    ],
+    "find": [
+      "Open Utilities in the left sidebar.",
+      "Pick Notifications, under Your data.",
+      "Or press Ctrl + K anywhere and type notifications."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "utilities.tickers",
+    "title": "Tickers",
+    "page_id": "tickers",
+    "route": "/utilities/tickers",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Manage symbol mappings and ticker configurations.",
+    "keywords": [
+      "utility",
+      "utilities",
+      "tools",
+      "symbols",
+      "mapping",
+      "configuration",
+      "instruments"
+    ],
+    "ask": [
+      "Where is Tickers?",
+      "How do I open Tickers?",
+      "utility utilities tools symbols mapping configuration instruments"
+    ],
+    "find": [
+      "Open Utilities in the left sidebar.",
+      "Pick Tickers, under Market information.",
+      "Or press F6 from anywhere.",
+      "Or press Ctrl + K anywhere and type tickers."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin",
+    "title": "Admin+",
+    "page_id": "admin",
+    "route": "/admin",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Lists every Admin+ page, grouped by what each one answers.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management"
+    ],
+    "ask": [
+      "Where is Admin+?",
+      "How do I open Admin+?",
+      "admin administration management"
+    ],
+    "find": [
+      "Click Admin+ in the left sidebar.",
+      "Or press Ctrl + K anywhere and type admin+."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.custodians",
+    "title": "Custodians",
+    "page_id": "custodians",
+    "route": "/admin/custodians",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Manage clearing members and custodian account details.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "clearing",
+      "member",
+      "accounts",
+      "settlement"
+    ],
+    "ask": [
+      "Where is Custodians?",
+      "How do I open Custodians?",
+      "admin administration management clearing member accounts settlement"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Custodians, under Market data and mapping.",
+      "Or press Ctrl + K anywhere and type custodians."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.trade-code-mapping",
+    "title": "Trade Code Mapping",
+    "page_id": "trade-code-mapping",
+    "route": "/admin/trade-code-mapping",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Map external trade codes to internal system identifiers.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "mapping",
+      "identifiers",
+      "codes",
+      "internal"
+    ],
+    "ask": [
+      "Where is Trade Code Mapping?",
+      "How do I open Trade Code Mapping?",
+      "admin administration management mapping identifiers codes internal"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Trade Code Mapping, under Market data and mapping.",
+      "Or press Ctrl + K anywhere and type trade code mapping."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.fx-rates",
+    "title": "Fx Rates",
+    "page_id": "fx-rates",
+    "route": "/admin/fx-rates",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Configure foreign exchange rates for cross-currency calculations.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "forex",
+      "currency",
+      "exchange",
+      "cross"
+    ],
+    "ask": [
+      "Where is Fx Rates?",
+      "How do I open Fx Rates?",
+      "admin administration management forex currency exchange cross"
+    ],
+    "find": [
+      "Press Ctrl + K anywhere and type fx rates. It opens as a dialog over the page you are on."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.alerts",
+    "title": "Custom Alerts",
+    "page_id": "alerts",
+    "route": "/admin/alerts",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Set up parameterized breach alerts and custom triggers.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "triggers",
+      "breach",
+      "custom",
+      "parameters"
+    ],
+    "ask": [
+      "Where is Custom Alerts?",
+      "How do I open Custom Alerts?",
+      "admin administration management triggers breach custom parameters"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Custom Alerts, under Limits and alerts.",
+      "Or press Ctrl + K anywhere and type custom alerts."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.threshold-configuration",
+    "title": "Threshold Configuration",
+    "page_id": "threshold-configuration",
+    "route": "/admin/threshold-configuration",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Set the loss, stress loss and margin utilization thresholds the risk console breaches against.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "threshold",
+      "breach",
+      "limit",
+      "cross",
+      "risk console"
+    ],
+    "ask": [
+      "Where is Threshold Configuration?",
+      "How do I open Threshold Configuration?",
+      "admin administration management threshold breach limit cross risk console"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Threshold Configuration, under Limits and alerts.",
+      "Or press Ctrl + K anywhere and type threshold configuration."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.config-entity-limits",
+    "title": "Entity Limits",
+    "page_id": "config-entity-limits",
+    "route": "/admin/config-entity-limits",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Set the book balance, margin and loss limits held against each account and dealer.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "limit",
+      "margin",
+      "book balance",
+      "loss",
+      "entity",
+      "account"
+    ],
+    "ask": [
+      "Where is Entity Limits?",
+      "How do I open Entity Limits?",
+      "admin administration management limit margin book balance loss entity account"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Entity Limits, under Limits and alerts.",
+      "Or press Ctrl + K anywhere and type entity limits."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.global-variable",
+    "title": "Global Variables",
+    "page_id": "global-variable",
+    "route": "/admin/global-variable",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "System-wide constants and risk variable configurations.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "constants",
+      "system",
+      "configuration",
+      "variables"
+    ],
+    "ask": [
+      "Where is Global Variables?",
+      "How do I open Global Variables?",
+      "admin administration management constants system configuration variables"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Global Variables, under Market data and mapping.",
+      "Or press Ctrl + K anywhere and type global variables."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.available-capital-and-exposure-multiple",
+    "title": "Available Capital & Exposure Multiple",
+    "page_id": "available-capital-and-exposure-multiple",
+    "route": "/admin/available-capital-and-exposure-multiple",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Manage total capital limits and multi-level exposures.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "capital",
+      "limits",
+      "multi",
+      "exposure"
+    ],
+    "ask": [
+      "Where is Available Capital & Exposure Multiple?",
+      "How do I open Available Capital & Exposure Multiple?",
+      "admin administration management capital limits multi exposure"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Available Capital & Exposure Multiple, under Limits and alerts.",
+      "Or press Ctrl + K anywhere and type available capital & exposure multiple."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.group",
+    "title": "Groups",
+    "page_id": "group",
+    "route": "/admin/group",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Create and manage organizational risk groups.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "organization",
+      "risk",
+      "teams",
+      "structure"
+    ],
+    "ask": [
+      "Where is Groups?",
+      "How do I open Groups?",
+      "admin administration management organization risk teams structure"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Groups, under People and access.",
+      "Or press Ctrl + K anywhere and type groups."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.credentials-vault",
+    "title": "Credentials Vault",
+    "page_id": "credentials-vault",
+    "route": "/admin/credentials-vault",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Manage NSE & MCX extranet credentials and email configurations.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "credentials",
+      "vault",
+      "connection",
+      "exchange",
+      "nse",
+      "mcx",
+      "ftps",
+      "email"
+    ],
+    "ask": [
+      "Where is Credentials Vault?",
+      "How do I open Credentials Vault?",
+      "admin administration management credentials vault connection exchange nse mcx ftps email"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Credentials Vault, under Connections.",
+      "Or press Ctrl + K anywhere and type credentials vault."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.collateral-allocation",
+    "title": "Collateral Allocation [CIM]",
+    "page_id": "collateral-allocation",
+    "route": "/admin/collateral-allocation",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Manage NSE CIM API credentials and submit client collateral allocations.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "collateral",
+      "allocation",
+      "cim",
+      "nse",
+      "credentials"
+    ],
+    "ask": [
+      "Where is Collateral Allocation [CIM]?",
+      "How do I open Collateral Allocation [CIM]?",
+      "admin administration management collateral allocation cim nse credentials"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Collateral Allocation [CIM], under Connections.",
+      "Or press Ctrl + K anywhere and type collateral allocation [cim]."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.delta-oi-limits",
+    "title": "Delta OI Limit",
+    "page_id": "delta-oi-limits",
+    "route": "/admin/delta-oi-limits",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Configure open interest and delta-based trading limits.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "open",
+      "interest",
+      "limits",
+      "trading"
+    ],
+    "ask": [
+      "Where is Delta OI Limit?",
+      "How do I open Delta OI Limit?",
+      "admin administration management open interest limits trading"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Delta OI Limit, under Limits and alerts.",
+      "Or press Ctrl + K anywhere and type delta oi limit."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.contacts",
+    "title": "Contacts",
+    "page_id": "contacts",
+    "route": "/admin/contacts",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Keep the names, departments, emails and phones of your contacts.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "contacts",
+      "people",
+      "email",
+      "phone",
+      "department"
+    ],
+    "ask": [
+      "Where is Contacts?",
+      "How do I open Contacts?",
+      "admin administration management contacts people email phone department"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick Contacts, under People and access.",
+      "Or press Ctrl + K anywhere and type contacts."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.users-management",
+    "title": "User Management",
+    "page_id": "users-management",
+    "route": "/admin/users-management",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "read",
+    "description": "Create, edit and manage system users and their roles.",
+    "keywords": [
+      "admin",
+      "administration",
+      "management",
+      "users",
+      "accounts",
+      "permissions",
+      "roles"
+    ],
+    "ask": [
+      "Where is User Management?",
+      "How do I open User Management?",
+      "admin administration management users accounts permissions roles"
+    ],
+    "find": [
+      "Open Admin+ in the left sidebar.",
+      "Pick User Management, under People and access.",
+      "Or press Ctrl + K anywhere and type user management."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "admin.import-file",
+    "title": "Import Files",
+    "page_id": "import-file",
+    "route": "/admin/import-file",
+    "tour_id": null,
+    "roles": [
+      "admin"
+    ],
+    "permission": "write",
+    "description": "Upload raw position, trade and margin files manually.",
+    "keywords": [
+      "upload",
+      "manual",
+      "position",
+      "margin",
+      "csv",
+      "file"
+    ],
+    "ask": [
+      "Where is Import Files?",
+      "How do I open Import Files?",
+      "upload manual position margin csv file"
+    ],
+    "find": [
+      "Click Import Files in the left sidebar.",
+      "Or press Ctrl + K anywhere and type import files."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "settings",
+    "title": "Settings",
+    "page_id": "settings",
+    "route": "/settings",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Lists every Settings page, grouped by what each one answers.",
+    "keywords": [
+      "settings",
+      "preferences",
+      "account"
+    ],
+    "ask": [
+      "Where is Settings?",
+      "How do I open Settings?",
+      "settings preferences account"
+    ],
+    "find": [
+      "Press Ctrl + K anywhere and type settings."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "settings.profile",
+    "title": "Profile",
+    "page_id": "settings",
+    "route": "/settings?tab=account",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Configure your personal profile information.",
+    "keywords": [
+      "settings",
+      "preferences",
+      "account",
+      "personal",
+      "profile",
+      "information"
+    ],
+    "ask": [
+      "Where is Profile?",
+      "How do I open Profile?",
+      "settings preferences account personal profile information"
+    ],
+    "find": [
+      "Press Ctrl + K anywhere and type profile."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "settings.notifications",
+    "title": "Notifications",
+    "page_id": "settings",
+    "route": "/settings?tab=notifications",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Configure your personal alert delivery methods.",
+    "keywords": [
+      "settings",
+      "preferences",
+      "account",
+      "personal",
+      "delivery",
+      "alerts",
+      "methods"
+    ],
+    "ask": [
+      "Where is Notifications?",
+      "How do I open Notifications?",
+      "settings preferences account personal delivery alerts methods"
+    ],
+    "find": [
+      "Press Ctrl + K anywhere and type notifications."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  },
+  {
+    "id": "settings.security",
+    "title": "Security",
+    "page_id": "settings",
+    "route": "/settings?tab=security",
+    "tour_id": null,
+    "roles": [
+      "admin",
+      "broker",
+      "group",
+      "dealer"
+    ],
+    "permission": "read",
+    "description": "Manage your account's security settings.",
+    "keywords": [
+      "settings",
+      "preferences",
+      "account",
+      "security",
+      "password",
+      "authentication",
+      "privacy"
+    ],
+    "ask": [
+      "Where is Security?",
+      "How do I open Security?",
+      "settings preferences account security password authentication privacy"
+    ],
+    "find": [
+      "Press Ctrl + K anywhere and type security."
+    ],
+    "how": [],
+    "figures": [],
+    "questions": [],
+    "hasTour": false
+  }
+]

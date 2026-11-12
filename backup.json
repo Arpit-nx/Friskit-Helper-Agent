@@ -1,0 +1,465 @@
+{
+  "catalogVersion": "aedfdc374ffb",
+  "topics": [
+    {
+      "id": "reports.live-margin",
+      "title": "Live Margin",
+      "operation": null,
+      "page": {
+        "name": "Live Margin",
+        "path": "/reports/live-margin",
+        "section": "Reports",
+        "category": "Margin",
+        "description": "Live P&L and margin by client, with product-wise positions and their trades.",
+        "keywords": [
+          "margin",
+          "span",
+          "exposure",
+          "position",
+          "trades",
+          "client",
+          "report",
+          "reports"
+        ]
+      },
+      "access": {
+        "roles": [
+          "admin",
+          "broker",
+          "group"
+        ],
+        "permission": "read"
+      },
+      "ask": [
+        "How do I see margins?",
+        "Who is short of margin?",
+        "Where is the margin shortage?",
+        "Which client is using too much margin?",
+        "What will the margin be tomorrow?",
+        "What was the peak margin today?",
+        "Which symbol takes the most margin?",
+        "span exposure utilisation available"
+      ],
+      "find": [
+        "Open Reports in the left sidebar.",
+        "Pick Live Margin, under Margin.",
+        "Or press Ctrl + K anywhere and type live margin."
+      ],
+      "how": [],
+      "figures": [
+        {
+          "name": "SPAN Req",
+          "meaning": "The SPAN margin. The columns before it build it up the way the exchange does."
+        },
+        {
+          "name": "Total Mrgn",
+          "meaning": "SPAN + exposure margin required now."
+        },
+        {
+          "name": "Mrgn Available",
+          "meaning": "What the client has to cover it."
+        },
+        {
+          "name": "Shortage",
+          "meaning": "How far the available margin falls short."
+        },
+        {
+          "name": "Mrgn Utlz",
+          "meaning": "Margin required as a % of margin available. Over 100% is short."
+        },
+        {
+          "name": "T+1 Short",
+          "meaning": "The shortage tomorrow on today's book."
+        },
+        {
+          "name": "Peak Mrgn",
+          "meaning": "The day's highest margin. Peak Time says when."
+        }
+      ],
+      "questions": [
+        {
+          "question": "Who is short right now?",
+          "answer": "Shortage, or Mrgn Utlz over 100%."
+        },
+        {
+          "question": "Will they be short tomorrow?",
+          "answer": "T+1 Short."
+        },
+        {
+          "question": "How bad did it get today?",
+          "answer": "Peak Mrgn, with Peak Short and Peak Time."
+        },
+        {
+          "question": "Which symbol eats the margin?",
+          "answer": "Double click the client and read Share: each symbol's part of Total Mrgn."
+        }
+      ],
+      "hasTour": true
+    },
+    {
+      "id": "hedge-advisory",
+      "title": "Hedge Advisory",
+      "operation": null,
+      "page": {
+        "name": "Hedge Advisory",
+        "path": "/hedge-advisory",
+        "section": "Hedge Advisory",
+        "category": null,
+        "description": "Futures hedges that would cut each account's margin, and what they save.",
+        "keywords": [
+          "hedge",
+          "advisory",
+          "advice",
+          "margin",
+          "saving",
+          "span",
+          "futures",
+          "square off"
+        ]
+      },
+      "access": {
+        "roles": [
+          "admin"
+        ],
+        "permission": "read"
+      },
+      "ask": [
+        "How can I reduce margin?",
+        "Where is hedge advisory?",
+        "Which hedge saves the most margin?",
+        "What hedge should I take?",
+        "What is the margin saving?",
+        "Is this hedge advice safe to trade?",
+        "futures hedge square off bracket"
+      ],
+      "find": [
+        "Click Hedge Advisory in the left sidebar, just under the console.",
+        "Or press F9 from anywhere."
+      ],
+      "how": [],
+      "figures": [
+        {
+          "name": "Square Offs",
+          "meaning": "Hedges that close a position out rather than offset it."
+        },
+        {
+          "name": "Bracket Edge",
+          "meaning": "Hedges on the edge of a SPAN bracket: a small price move may change the saving."
+        },
+        {
+          "name": "Mrgn Before",
+          "meaning": "Total margin now."
+        },
+        {
+          "name": "Mrgn After",
+          "meaning": "Total margin after the hedges."
+        },
+        {
+          "name": "Saving",
+          "meaning": "Margin freed. Red means the hedge costs more than it saves."
+        },
+        {
+          "name": "Saving %",
+          "meaning": "The saving as a % of the margin now."
+        }
+      ],
+      "questions": [
+        {
+          "question": "Where is the biggest saving?",
+          "answer": "Sort by Saving or Saving %."
+        },
+        {
+          "question": "What does it change?",
+          "answer": "Mrgn Before against Mrgn After."
+        },
+        {
+          "question": "Which advice needs care?",
+          "answer": "Square Offs and Bracket Edge. Inside, a red Negative After means do not trade on it."
+        }
+      ],
+      "hasTour": true
+    },
+    {
+      "id": "admin.dealer-mapping.create",
+      "title": "Add a dealer mapping",
+      "operation": "create",
+      "page": {
+        "name": "Dealer Mapping",
+        "path": "/admin/dealer-mapping",
+        "section": "Admin+",
+        "category": "People and access",
+        "description": "Assign dealers to specific groups, limits, or terminals.",
+        "keywords": [
+          "assign",
+          "terminals",
+          "groups",
+          "limits",
+          "admin",
+          "administration",
+          "management"
+        ]
+      },
+      "access": {
+        "roles": [
+          "admin"
+        ],
+        "permission": "write"
+      },
+      "ask": [
+        "How do I add a dealer mapping?",
+        "How do I map a terminal to a group?",
+        "How do I assign a dealer to a group?",
+        "new terminal id account code custodian"
+      ],
+      "find": [
+        "Open Admin+ in the left sidebar.",
+        "Pick Dealer Mapping, under People and access.",
+        "Or press Ctrl + K anywhere and type dealer mapping."
+      ],
+      "how": [
+        "Click Add New at the top right of the grid.",
+        "Pick the Exchange and enter the Terminal ID. Both are required.",
+        "Pick the Group, also required. The list comes from Admin+ > Groups, so add the group there first if it is missing.",
+        "Optionally enter the Account Code, Dealer Name and Dealer Code.",
+        "Tick Custodian if the dealer is a custodian.",
+        "Click Save. The new mapping shows in the grid. If the save fails the form stays open with what you entered."
+      ],
+      "figures": [],
+      "questions": [],
+      "hasTour": true
+    },
+    {
+      "id": "admin.dealer-mapping.edit",
+      "title": "Edit a dealer mapping",
+      "operation": "edit",
+      "page": {
+        "name": "Dealer Mapping",
+        "path": "/admin/dealer-mapping",
+        "section": "Admin+",
+        "category": "People and access",
+        "description": "Assign dealers to specific groups, limits, or terminals.",
+        "keywords": [
+          "assign",
+          "terminals",
+          "groups",
+          "limits",
+          "admin",
+          "administration",
+          "management"
+        ]
+      },
+      "access": {
+        "roles": [
+          "admin"
+        ],
+        "permission": "write"
+      },
+      "ask": [
+        "How do I edit a dealer mapping?",
+        "How do I change a dealer's group?",
+        "How do I change the terminal id of a dealer?",
+        "update modify dealer name dealer code custodian"
+      ],
+      "find": [
+        "Open Admin+ in the left sidebar.",
+        "Pick Dealer Mapping, under People and access.",
+        "Or press Ctrl + K anywhere and type dealer mapping."
+      ],
+      "how": [
+        "Double click the mapping's row. Its cells open for editing.",
+        "Change the Terminal ID, Account Code, Group, Dealer Name, Dealer Code or Custodian. The Exchange cannot be changed; delete the mapping and add it again instead.",
+        "Press Enter to save, or Esc to cancel."
+      ],
+      "figures": [],
+      "questions": [],
+      "hasTour": true
+    },
+    {
+      "id": "admin.dealer-mapping.delete",
+      "title": "Delete a dealer mapping",
+      "operation": "delete",
+      "page": {
+        "name": "Dealer Mapping",
+        "path": "/admin/dealer-mapping",
+        "section": "Admin+",
+        "category": "People and access",
+        "description": "Assign dealers to specific groups, limits, or terminals.",
+        "keywords": [
+          "assign",
+          "terminals",
+          "groups",
+          "limits",
+          "admin",
+          "administration",
+          "management"
+        ]
+      },
+      "access": {
+        "roles": [
+          "admin"
+        ],
+        "permission": "write"
+      },
+      "ask": [
+        "How do I delete a dealer mapping?",
+        "How do I remove a terminal mapping?",
+        "remove unmap dealer terminal",
+        "I want to remove a dealer mapping"
+      ],
+      "find": [
+        "Open Admin+ in the left sidebar.",
+        "Pick Dealer Mapping, under People and access.",
+        "Or press Ctrl + K anywhere and type dealer mapping."
+      ],
+      "how": [
+        "Click the bin icon at the end of the mapping's row.",
+        "Type the row's Terminal ID in the box to confirm.",
+        "Click Confirm Delete. This cannot be undone."
+      ],
+      "figures": [],
+      "questions": [],
+      "hasTour": true
+    },
+    {
+      "id": "admin.dealer-mapping.upload",
+      "title": "Upload dealer mappings from a file",
+      "operation": "upload",
+      "page": {
+        "name": "Dealer Mapping",
+        "path": "/admin/dealer-mapping",
+        "section": "Admin+",
+        "category": "People and access",
+        "description": "Assign dealers to specific groups, limits, or terminals.",
+        "keywords": [
+          "assign",
+          "terminals",
+          "groups",
+          "limits",
+          "admin",
+          "administration",
+          "management"
+        ]
+      },
+      "access": {
+        "roles": [
+          "admin"
+        ],
+        "permission": "write"
+      },
+      "ask": [
+        "How do I upload dealer mappings?",
+        "How do I add many dealer mappings at once?",
+        "import bulk csv file sample"
+      ],
+      "find": [
+        "Open Admin+ in the left sidebar.",
+        "Pick Dealer Mapping, under People and access.",
+        "Or press Ctrl + K anywhere and type dealer mapping."
+      ],
+      "how": [
+        "Click Upload Mappings at the top right of the grid. It opens the import page set to dealer mappings.",
+        "Download the sample file there to see the columns it expects.",
+        "Fill it in, pick it and upload."
+      ],
+      "figures": [],
+      "questions": [],
+      "hasTour": true
+    },
+    {
+      "id": "admin.product-mapping.create",
+      "title": "Add a product mapping",
+      "operation": "create",
+      "page": {
+        "name": "Product Mapping",
+        "path": "/admin/product-mapping",
+        "section": "Admin+",
+        "category": "Market data and mapping",
+        "description": "Link market instruments to internal risk product categories.",
+        "keywords": [
+          "instruments",
+          "categories",
+          "link",
+          "risk",
+          "admin",
+          "administration",
+          "management"
+        ]
+      },
+      "access": {
+        "roles": [
+          "admin"
+        ],
+        "permission": "write"
+      },
+      "ask": [
+        "How do I add a product mapping?",
+        "How do I add a symbol?",
+        "How do I set the lot size of a new symbol?",
+        "new qlot unit multiplier currency instrument"
+      ],
+      "find": [
+        "Open Admin+ in the left sidebar.",
+        "Pick Product Mapping, under Market data and mapping.",
+        "Or press Ctrl + K anywhere and type product mapping."
+      ],
+      "how": [
+        "Click Add New at the top right of the grid.",
+        "Pick the Exchange and enter the Symbol.",
+        "Enter QLot and Multiplier, each 1 or more.",
+        "Pick the Unit and the Currency.",
+        "Untick Close after save to keep the form open for the next one.",
+        "Click Save. The new mapping shows in the grid."
+      ],
+      "figures": [],
+      "questions": [],
+      "hasTour": true
+    },
+    {
+      "id": "admin.product-mapping.edit",
+      "title": "Edit a product mapping",
+      "operation": "edit",
+      "page": {
+        "name": "Product Mapping",
+        "path": "/admin/product-mapping",
+        "section": "Admin+",
+        "category": "Market data and mapping",
+        "description": "Link market instruments to internal risk product categories.",
+        "keywords": [
+          "instruments",
+          "categories",
+          "link",
+          "risk",
+          "admin",
+          "administration",
+          "management"
+        ]
+      },
+      "access": {
+        "roles": [
+          "admin"
+        ],
+        "permission": "write"
+      },
+      "ask": [
+        "How do I edit a product mapping?",
+        "How do I change the lot size of a symbol?",
+        "How do I change the multiplier or currency of a product?",
+        "update modify qlot unit"
+      ],
+      "find": [
+        "Open Admin+ in the left sidebar.",
+        "Pick Product Mapping, under Market data and mapping.",
+        "Or press Ctrl + K anywhere and type product mapping."
+      ],
+      "how": [
+        "Double click the mapping's row. Its cells open for editing.",
+        "Change QLot, Unit, Currency or Multiplier. The Exchange and Symbol cannot be changed.",
+        "Press Enter to save, or Esc to cancel.",
+        "There is no delete on this page."
+      ],
+      "figures": [],
+      "questions": [],
+      "hasTour": true
+    }
+  ]
+}
